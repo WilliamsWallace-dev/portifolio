@@ -12,7 +12,11 @@
 
 #starsMov1{
   transform-origin: 50% 50%;
-  animation : starsMov1 60s linear 0s infinite normal both
+
+  @media  screen and (min-width : 960px) {
+    animation : starsMov1 60s linear 0s infinite normal both
+  } 
+  
 }
 
 @keyframes starsMov1 {
@@ -37,7 +41,10 @@
 
 #starsMov2{
   transform-origin: 50% 50%;
-  // animation : starsMov2 60s linear 3s infinite normal both
+  @media  screen and (min-width : 960px) {
+    animation : starsMov2 60s linear 3s infinite normal both
+  }
+  
 }
 
 @keyframes starsMov2 {
@@ -63,7 +70,10 @@
 #SombraFundo{
   transform-origin: 50% 50%;
   // transform: translate3d(200px,0,0);
-  animation: sombraFundo 20s ease 0s infinite alternate both;
+  @media  screen and (min-width : 960px) {
+    animation: sombraFundo 20s ease 0s infinite alternate both;
+  }
+  
 }
 
 @keyframes sombraFundo {
@@ -87,8 +97,11 @@
 
 #SombraFundo2{
   transform-origin: 50% 50%;
+  @media  screen and (min-width : 960px) {
+    animation: sombraFundo2 20s ease 0s infinite alternate both;
+  }
   // transform: translate3d(200px,0,0);
-  animation: sombraFundo2 20s ease 0s infinite alternate both;
+  
 }
 
 @keyframes sombraFundo2 {
@@ -113,7 +126,10 @@
 
 #SombraFundo3{
   transform-origin: 50% 50%;
-  animation: sombraFundo3 30s ease 0s infinite alternate both;
+  @media  screen and (min-width : 960px) {
+    animation: sombraFundo3 30s ease 0s infinite alternate both;
+  }
+  
 }
 
 @keyframes sombraFundo3 {
@@ -138,7 +154,10 @@
 
 #circle1{
   transform-origin: 50% 50%;
-  animation: circle1 10s linear 0s infinite alternate both;
+  @media  screen and (min-width : 960px) {
+    animation: circle1 10s linear 0s infinite alternate both;
+  }
+  
 }
 
 @keyframes circle1 {
@@ -153,7 +172,10 @@
 
 #circle2{
   transform-origin: 50% 50%;
-  animation: circle2 60s linear 1s infinite alternate both;
+  @media  screen and (min-width : 960px) {
+    animation: circle2 120s linear 1s infinite alternate both;
+  }
+  animation: circle2 120s linear 1s infinite alternate both;
 }
 
 @keyframes circle2 {
