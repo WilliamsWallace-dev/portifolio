@@ -787,6 +787,7 @@ img {
 }
 #starsMov2 {
   transform-origin: 50% 50%;
+  animation: starsMov2 60s linear 3s infinite normal both;
 }
 @media screen and (min-width: 960px) {
   #starsMov2 {
@@ -910,7 +911,6 @@ img {
 }
 #circle2 {
   transform-origin: 50% 50%;
-  animation: circle2 120s linear 1s infinite alternate both;
 }
 @media screen and (min-width: 960px) {
   #circle2 {

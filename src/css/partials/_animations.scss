@@ -44,6 +44,7 @@
   @media  screen and (min-width : 960px) {
     animation : starsMov2 60s linear 3s infinite normal both
   }
+  animation : starsMov2 60s linear 3s infinite normal both
   
 }
 
@@ -175,7 +176,6 @@
   @media  screen and (min-width : 960px) {
     animation: circle2 120s linear 1s infinite alternate both;
   }
-  animation: circle2 120s linear 1s infinite alternate both;
 }
 
 @keyframes circle2 {
