@@ -37,7 +37,7 @@
 
 #starsMov2{
   transform-origin: 50% 50%;
-  animation : starsMov2 60s linear 3s infinite normal both
+  // animation : starsMov2 60s linear 3s infinite normal both
 }
 
 @keyframes starsMov2 {
@@ -153,7 +153,7 @@
 
 #circle2{
   transform-origin: 50% 50%;
-  animation: circle2 120s linear 1s infinite alternate both;
+  animation: circle2 60s linear 1s infinite alternate both;
 }
 
 @keyframes circle2 {
