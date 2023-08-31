@@ -762,7 +762,6 @@ img {
 
 #starsMov1 {
   transform-origin: 50% 50%;
-  animation: starsMov1 60s cubic-bezier(0.475, 0.195, 0.75, 0.75) 0s infinite normal both;
 }
 
 @keyframes starsMov1 {
@@ -783,7 +782,6 @@ img {
 }
 #starsMov2 {
   transform-origin: 50% 50%;
-  animation: starsMov2 60s cubic-bezier(0.475, 0.195, 0.75, 0.75) 3s infinite normal both;
 }
 
 @keyframes starsMov2 {
