@@ -762,6 +762,7 @@ img {
 
 #starsMov1 {
   transform-origin: 50% 50%;
+  animation: starsMov1 60s linear 0s infinite normal both;
 }
 
 @keyframes starsMov1 {
@@ -782,6 +783,7 @@ img {
 }
 #starsMov2 {
   transform-origin: 50% 50%;
+  animation: starsMov2 60s linear 3s infinite normal both;
 }
 
 @keyframes starsMov2 {
@@ -871,6 +873,7 @@ img {
 }
 #circle1 {
   transform-origin: 50% 50%;
+  animation: circle1 10s linear 0s infinite alternate both;
 }
 
 @keyframes circle1 {
@@ -883,6 +886,7 @@ img {
 }
 #circle2 {
   transform-origin: 50% 50%;
+  animation: circle2 120s linear 1s infinite alternate both;
 }
 
 @keyframes circle2 {
