@@ -1,0 +1,70 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
+
+html {
+  // Scrool mais suave de transição
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  scroll-behavior: smooth;
+
+  background-color: $black-normal;
+
+}
+
+// Para deixar imagens e SVGs fluidos
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.margin-center{
+  margin: 0 auto
+}
+
+// @import "partials/menu";
+// @import "partials/swiper";
+@import "partials/icons";
+// @import "partials/footer";
+@import "partials/animations";
+@import "../components/BackgroundHero/backgrounHero";
+@import "../sections/Hero/hero";
+@import "../components/Header/header";
+@import "../sections/AfterSectionHero/afterSectionHero";
+@import "../sections/TechSection/techSection";
+// @import "../components/BackgroundTechs/backgroundTechs";
+@import "../svg/SVGTechs/svgTechs";
+@import "../svg/Techs/techs";
+@import "../sections/ProjectSection/projetcSection";
+@import "../sections/CourseSection/courseSection";
+@import "../svg/SVGCv/svgCv";
+@import "../sections/AboutSection/aboutSection";
+@import "../svg/SVGAbout/svgAbout";
+@import "../svg/SVGContact/svgContact";
+@import "../sections/ContactSection/contactSection";
+@import "../sections/Footer/footer";

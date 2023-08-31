@@ -1,0 +1,63 @@
+
+
+.footerContainer{
+
+    // transform: translateY(450%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include responsive(s){
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 0 8px;
+        &>div{
+            // border: 2px solid green;
+            min-width: 110px;
+            margin-left: 16px;
+        }
+        p:nth-of-type(1){
+            text-align: left;
+            color: $white-dark;
+        }
+    }
+
+    .btn-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include responsive(s){
+            display: none;
+        }
+        // transition: 3s ease;
+        &::before{
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-right: .5rem;
+
+            background-image: url("../assets/Icon/IconInstagram.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            // border: 1px solid red;
+            transition: .5s ease-in;
+        }
+        &:hover{
+            &::before{
+                background-image: url("../assets/Icon/IconInstagramHover.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.backgroundHero{
+    // justify-items: flex-start;
+    // align-items: flex-start;
+    // align-self: flex-start;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    // border: 1px solid red;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    object-fit: contain;
+
+    z-index: -999;
+    
+    @include responsive(s){
+        width: 200%;
+        height: 100%;
+        left: -50%;
+    }
+
+    #SVGHeroDef1,#SVGHero{
+        @include responsive(s){
+            transform-origin: 50% 50%;
+            transform: rotate(90deg);
+            width: 2000px;
+            border: 1px solid green;
+        }
+    }
+    
+}
+
+// #SVGHero{
+//     transform: translateY(80px);
+// }

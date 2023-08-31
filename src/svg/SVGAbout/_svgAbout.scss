@@ -1,0 +1,132 @@
+.SVGAboutUp{
+    position: absolute;
+    top: -20%;
+    left: -0%;
+    // border: 2px solid red;
+    margin: 0 auto;
+    width: 100%;
+    z-index: -99;
+
+    @include responsive(s){
+        top: -25%;
+    }
+}
+
+.SVGAboutDown{
+    position: absolute;
+    bottom: -20%;
+    left: -0%;
+    // border: 2px solid red;
+    margin: 0 auto;
+    width: 100%;
+    z-index: -99;
+
+    @include responsive(s){
+        bottom: -25%;
+    }
+}
+
+.Polygon3{
+    filter: blur(270px);
+}
+.Polygon4{
+    filter: blur(180px);
+}
+.Polygon5{
+    filter: blur(160px);
+}
+.Polygon6{
+    filter: blur(120px);
+}
+.Polygon7{
+    filter: blur(100px);
+}
+.Polygon8{
+    filter: blur(100px);
+}
+.Polygon9{
+    filter: blur(100px);
+}
+.Polygon10{
+    filter: blur(100px);
+}
+.Polygon11{
+    filter: blur(150px);
+}
+.Polygon12{
+    filter: blur(150px);
+}
+.Polygon13{
+    filter: blur(100px);
+}
+.Polygon14{
+    filter: blur(100px);
+}
+.Polygon15{
+    filter: blur(300px);
+}
+.Polygon16{
+    filter: blur(200px);
+}
+.Polygon17{
+    filter: blur(150px);
+}
+
+.vectorAnimation4{
+    filter: blur(.8px);
+    animation: vetorAnimationAboutSection 20s ease-in-out 0s infinite reverse  both ;
+    opacity: 0;
+}
+.vectorAnimation3{
+    filter: blur(.8px);
+    animation: vetorAnimationAboutSection 20s ease-in-out 3s infinite reverse  both ;
+    opacity: 0;
+}
+.vectorAnimation2{
+    filter: blur(.8px);
+    animation: vetorAnimationAboutSection 20s ease-in-out 8s infinite reverse  both ;
+    opacity: 0;
+}
+.vectorAnimation1{
+    filter: blur(.8px);
+    animation: vetorAnimationAboutSection 20s ease-in-out 13s infinite reverse  both ;
+    opacity: 0;
+}
+.vectorAnimation5{
+    filter: blur(.8px);
+    animation: vetorAnimationAboutSection 20s ease-in-out 15s infinite reverse  both ;
+    opacity: 0;
+}
+
+// @keyframes vectorAnimation {
+    
+// }
+
+@keyframes vetorAnimationAboutSection {
+    0%{ 
+        fill-opacity: 0;
+        stroke-dasharray: 1 1000;
+        stroke-dashoffset: 0;
+        stroke-width: 1;
+        opacity: 1; 
+    }
+    5%{
+        stroke-width: 2;
+        opacity: 1;
+    }
+    10%{
+        fill-opacity: 0;
+        stroke-dasharray: 120 1000;
+        stroke-dashoffset: 1200;
+        stroke-width: 2;
+        opacity: 1;
+    }
+    11%,100%{
+        fill-opacity: 0;
+        stroke-dasharray: 120 1000;
+        stroke-dashoffset: 1200;
+        stroke-width: 2;
+        opacity: 0;
+    }
+    
+  }

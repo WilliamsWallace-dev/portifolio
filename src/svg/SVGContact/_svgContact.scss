@@ -1,0 +1,125 @@
+
+
+.SVGContact{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: -6%;
+    left: -.5%;
+    z-index: -999;
+
+    @include responsive(s){
+        top: 0%;
+    }
+
+    #EfeitoLuz1{
+        filter: blur(250px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz2{
+        filter: blur(0px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz3{
+        filter: blur(200px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz4{
+        filter: blur(200px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz5{
+        filter: blur(210px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz6{
+        filter: blur(100px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz7{
+        filter: blur(125px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz8{
+        filter: blur(100px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz9{
+        filter: blur(125px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz10{
+        filter: blur(125px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz11{
+        filter: blur(50px);
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #LuzEfeitoVariaGradiente1{
+        filter: blur(170px); 
+        animation: opacityAnimationGradient 20s ease-in-out 7s infinite both ;
+    }
+    #LuzEfeitoVariaGradiente2{
+        filter: blur(170px); 
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #Vector{
+        filter: blur(.6px); 
+        animation: vetorAnimationContactSection 5s ease-in-out 2s 1 both ;
+    }
+    #stars{
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+
+    @keyframes vetorAnimationContactSection {
+        0%{ 
+            fill-opacity: 0;
+            stroke-dasharray: 1 1000;
+            stroke-dashoffset: 0;
+            stroke-width: 1;
+            opacity: 0; 
+        }
+        100%{
+            fill-opacity: 0;
+            stroke-dasharray: 1000 1;
+            stroke-dashoffset: 0;
+            stroke-width: 1;
+            opacity: 1;
+        }
+        
+      }
+
+      @keyframes opacityAnimationContactSection {
+        0%{ 
+            opacity: 0; 
+        }
+        40%{
+            opacity: .6;
+        }
+        60%{
+            opacity: .4;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+      }
+
+      @keyframes opacityAnimationGradient {
+        0%{ 
+            opacity: 0; 
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+      }
+
+      
+
+
+}

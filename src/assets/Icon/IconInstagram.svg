@@ -1,0 +1,21 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="IconInstagram">
+<rect id="Rectangle 1007" x="0.75" y="0.75" width="22.5" height="23.3571" rx="6.10714" stroke="url(#paint0_linear_182_2137)" stroke-width="1.5"/>
+<circle id="Ellipse 248" cx="12" cy="12.4286" r="5.67857" stroke="url(#paint1_linear_182_2137)" stroke-width="1.5"/>
+<circle id="Ellipse 249" cx="18.6428" cy="5.78613" r="1.5" fill="url(#paint2_linear_182_2137)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_182_2137" x1="24" y1="-2.64045e-06" x2="-4.00151" y2="10.1383" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D0896"/>
+<stop offset="1" stop-color="#AB40D6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_182_2137" x1="18.4286" y1="6" x2="3.55309" y2="11.5782" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D0896"/>
+<stop offset="1" stop-color="#AB40D6"/>
+</linearGradient>
+<linearGradient id="paint2_linear_182_2137" x1="20.1428" y1="4.28613" x2="16.6719" y2="5.58772" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D0896"/>
+<stop offset="1" stop-color="#AB40D6"/>
+</linearGradient>
+</defs>
+</svg>

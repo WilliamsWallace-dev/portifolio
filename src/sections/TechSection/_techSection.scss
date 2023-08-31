@@ -1,0 +1,65 @@
+.techSectionContainer{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+    @include responsive(s){
+        height: 60vh;
+    }
+    // overflow: hidden;
+    // border: 10px solid red;
+}
+
+.techSection{
+    // width: 100%;
+    position: relative;
+    // border: 1px solid red;
+
+    justify-content: flex-start;
+
+    .titleSection{
+        align-self: flex-start;
+        // border: 2px solid red;
+    }
+
+    .listTechSection{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 460px;
+        .itemListTech{
+            color: $white-normal;
+            margin: 4px 8px;
+            @include responsive(s){
+                margin: 4px;
+            }
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before{
+                content: "";
+                display: inline-block;
+                position: relative;
+
+                width: 20px;
+                height: 14px;
+                margin-right: 8px;
+
+                @include responsive(s){
+                    width: 14px;
+                    height: 10px;
+                    margin-right: 4px;
+                }
+                // border: 1px solid red;
+
+                background-image: url("../assets/Icon/iconCheck.svg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                
+            }
+        }
+    }
+}

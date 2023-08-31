@@ -1,0 +1,14 @@
+.Techs{
+    // border: 1px solid red;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    // bottom: 0;
+
+    @include responsive(s){
+        width: 70%;
+    }
+}
+

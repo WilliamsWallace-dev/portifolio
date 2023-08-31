@@ -1,0 +1,118 @@
+.btn-1{
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  background: var(--gradient-g-2, linear-gradient(225deg, #130F14 0%, #AB40D6 100%));
+
+  font-family: 'Oxanium', cursive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(s){
+    padding: .5rem .5rem;
+
+    font-family: 'Oxanium', cursive;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  
+
+  &::after{
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: .5rem;
+    // border: 1px solid red;
+    background-image: url("../assets/Icon/IconArrowButton.svg");
+
+    transition: .3s ease;
+
+    @include responsive(s){
+      margin-left: .25rem;
+    }
+  }
+  transition: .3s ease;
+  &:hover{
+    border-radius: 8px;
+
+    /* shadow/s-button */
+    // box-shadow: 0px 1.1335145235061646px 2.163982391357422px 0px rgba(132, 26, 176, 0.11), 0px 2.866743326187134px 5.472873687744141px 0px rgba(132, 26, 176, 0.15), 0px 5.8478875160217285px 11.164149284362793px 0px rgba(132, 26, 176, 0.19), 0px 12.04554271697998px 22.996036529541016px 0px rgba(132, 26, 176, 0.23), 0px 33px 63px 0px rgba(132, 26, 176, 0.34);
+    box-shadow: 0px 1.1335145235061646px 2.232680320739746px 0px rgba(132, 26, 176, 0.06), 0px 2.866743326187134px 5.646615982055664px 0px rgba(132, 26, 176, 0.09), 0px 5.8478875160217285px 11.518566131591797px 0px rgba(132, 26, 176, 0.11), 0px 12.04554271697998px 23.726070404052734px 0px rgba(132, 26, 176, 0.14), 0px 33px 65px 0px rgba(132, 26, 176, 0.20);
+    transform: translateY(-2px);
+    &::after{
+      transform: translateX(2px) translateY(-4px);
+    }
+  }
+}
+
+
+.btn-2{
+  padding: .85rem 2rem;
+  border-radius: 8px;
+  background: #0B0412;
+  color: $white-dark;
+
+  @include responsive(s){
+    padding: .25rem .25rem;
+
+    font-family: 'Oxanium', cursive;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  transition: .8s ease;
+  &:hover{
+    background: rgba(109, 8, 150, 0.80);
+    color: $white-light;
+  }
+}
+
+
+button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  font-family: 'Oxanium', cursive;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%;
+  color: $white-normal;
+
+  cursor: pointer;
+}
+
+.btn-3{
+  min-width: 80px;
+  height: 80px;
+  padding: 8px;
+  margin-left: 8px;
+
+  font-size: 14px;
+
+  @include responsive(s){
+    min-width: 60px;
+    height: 60px;
+    padding: 4px;
+    font-size: 12px;
+  }
+  border-radius: 50%;
+  background-color: $primary-normal;
+  box-shadow: 0px 4px 16px 0px rgba(5, 3, 5, 0.64) inset;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+  &:hover{
+    background-color: $primary-light;
+    box-shadow: 0px 6px 24px 0px rgba(5, 3, 5, 0.8) inset;
+
+    transform: translateY(-2px);
+  }
+}

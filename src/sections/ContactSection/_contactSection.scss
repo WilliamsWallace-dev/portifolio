@@ -1,0 +1,99 @@
+.ContactSectionContainer{
+    // position: relative;
+    // border: 1px solid purple;
+    // overflow: hidden;
+    height: 100vh;
+
+    @include responsive(s){
+        height: 60vh;
+    }
+    // border: 1px solid red;
+
+    // &::after{
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     border: 1px solid red;
+    //     top: 0;
+    //     left: 0;
+    //     background: linear-gradient(180deg, rgba(5, 3, 5, 0.48) 0%, rgba(5, 3, 5, 0.00) 11.52%, rgba(5, 3, 5, 0.00) 84.85%, rgba(5, 3, 5, 0.48) 100%), linear-gradient(180deg, rgba(5, 3, 5, 0.48) 0%, rgba(5, 3, 5, 0.00) 11.52%, rgba(5, 3, 5, 0.00) 84.85%, rgba(5, 3, 5, 0.48) 100%);
+    //     z-index: -998;
+    // }
+
+    .ContactSectionContent{
+        // width: 100%;
+        // height: 100%;
+        // border: 1px solid red;
+        width: 100%;
+        height: 50%;
+        // transform: translateY(-120px);
+
+        @include responsive(s){
+            height: 50%;
+        }
+
+        h5{
+            @include responsive(s){
+                font-size: 16px;
+            }
+        }
+    }
+    .profileImage{
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+
+        @include responsive(s){
+            width: 64px;
+            height: 64px;
+        }
+
+        position: relative;
+
+        // border: 1px solid green;
+
+        background-image: url("../assets/image/profileImage.jpg") ;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        // &::after{
+        //     content: "";
+        //     width: 100%;
+        //     height: 100%;
+        //     border-radius: 50%;
+        //     position: absolute;
+        //     z-index: 99;
+        //     top: 0;
+        //     left: 0;
+        //     margin: 0 auto;
+
+        //     background-image: url("../assets/image/profileImage.jpg") ;
+        //     background-position: center center;
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+
+        // }
+        &::before{
+            content: "";
+            width: 108%;
+            height: 108%;
+            border-radius: 50%;
+            position: absolute;
+            top: -3px;
+            left: -2.5px;
+            margin: 0 auto;
+            display: block;
+            z-index: -9;
+            background: var(--gradient-g-2, linear-gradient(225deg, #130F14 0%, #AB40D6 100%));
+            // background-color: red;
+        }
+    }
+    .email{
+        margin-top: 20px;
+        color: $primary-light;
+        text-shadow: 0px 4px 48px rgba(61, 204, 252, 0.24), 0px 4px 8px rgba(5, 3, 5, 0.48);
+    }
+}

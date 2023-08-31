@@ -1,0 +1,32 @@
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include responsive(s){
+        display: none;
+        pointer-events: none;
+    }
+
+    // border: 1px solid red;
+}
+.headerMobile{
+
+    @media  screen and (min-width : 960px) {
+        display: none;
+    } 
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    font-size: 24px;
+}

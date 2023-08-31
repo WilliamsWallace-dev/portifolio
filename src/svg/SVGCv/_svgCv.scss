@@ -1,0 +1,228 @@
+
+.SVGCv{
+
+    position: absolute;
+    z-index: -999;
+    // border: 5px solid red;
+
+    width: 100%;
+    height: 140%;
+    @include responsive(s){
+        width: 100%;
+        transform: translateY(30px);
+    }
+        
+}
+#circle-blue{
+    transform-origin: 50% 50%;
+    animation: rotacion 70s linear .2s infinite;
+    }
+#circle-white{
+    transform-origin: 50% 50%;
+    animation: rotacion-white 80s linear 0s infinite reverse both;
+}
+#circle-purple{
+    transform-origin: 50% 50%;
+    animation: rotacion 90s linear .5s infinite reverse;
+}
+
+#circle-1{
+    transform-origin: 50% 50%;
+    animation: rotacion 900s linear .5s infinite reverse;
+}
+
+#circle-2{
+    transform-origin: 50% 50%;
+    animation: rotacion 750s linear .5s infinite;
+}
+
+#circle-3{
+    transform-origin: 50% 50%;
+    animation: rotacion 800s linear .5s infinite reverse;
+}
+
+
+@keyframes rotacion {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotacion-white {
+	0% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(705deg);
+	}
+}
+
+// #OneBitCode{
+
+//     animation: opacity 32s ease-in-out 0s infinite both ;    
+    
+// }
+// #Obc-circle{
+//     animation: circle-color 3s ease-in-out 0s infinite both ; 
+// }
+
+// #CoffStack{
+
+//     animation: opacity 32s ease-in-out 0s infinite both ;    
+    
+// }
+// #CoffStack-circle{
+//     animation: circle-color 3s ease-in-out 0s infinite both ; 
+// }
+
+
+// #Mecatronic{
+
+//     animation: opacity 32s ease-in-out 9.6s infinite both ;    
+    
+// }
+// #Mecatronic-circle{
+//     animation: circle-color 3s ease-in-out 9.6s infinite both ; 
+// }
+
+// #TigerCodes{
+
+//     animation: opacity 32s ease-in-out 9.6s infinite both ;    
+    
+// }
+// #Tiger-circle{
+//     animation: circle-color 3s ease-in-out 9.6s infinite both ; 
+// }
+
+
+// #Languages{
+
+//     animation: opacity 32s ease-in-out 18s infinite both ;    
+    
+// }
+// #Language-circle{
+//     animation: circle-color 3s ease-in-out 18s infinite both ; 
+// }
+
+// #Ads{
+
+//     animation: opacity 32s ease-in-out 18s infinite both ;    
+    
+// }
+// #Ads-circle{
+//     animation: circle-color 3s ease-in-out 18s infinite both ; 
+// }
+
+
+// #FrontPush{
+
+//     animation: opacity 32s ease-in-out 24s infinite both ;    
+    
+// }
+// #LFront-circle{
+//     animation: circle-color 3s ease-in-out 24s infinite both ; 
+// }
+
+// @keyframes opacity {
+//     0%{
+//         opacity: 0;
+//     }
+//     5%,30%{
+//         opacity: 1;
+//     }
+//     35%,100%{
+//         opacity: 0;
+//     }
+// }
+
+
+#OneBitCode{
+
+    animation: opacity 20s ease-in-out 0s infinite both ;    
+    
+}
+#Obc-circle{
+    animation: circle-color 20s ease-in-out 0s infinite both ; 
+}
+
+#CoffStack{
+
+    animation: opacity 20s ease-in-out 7s infinite both ;    
+    
+}
+#CoffStack-circle{
+    animation: circle-color 20s ease-in-out 7s infinite both ; 
+}
+
+
+#Mectronics{
+
+    animation: opacity 20s ease-in-out 12s infinite both ;    
+    
+}
+#Mecatronic-circle{
+    animation: circle-color 20s ease-in-out 12s infinite both ; 
+}
+
+#TigerCodes{
+
+    animation: opacity 20s ease-in-out 15s infinite both ;    
+    
+}
+#Tiger-circle{
+    animation: circle-color 20s ease-in-out 15s infinite both ; 
+}
+
+
+#Languages{
+
+    animation: opacity 20s ease-in-out 3s infinite both ;    
+    
+}
+#Language-circle{
+    animation: circle-color 20s ease-in-out 3s infinite both ; 
+}
+
+#Ads{
+
+    animation: opacity 20s ease-in-out 9s infinite both ;    
+    
+}
+#Ads-circle{
+    animation: circle-color 20s ease-in-out 9s infinite both ; 
+}
+
+
+#FrontPush{
+    animation: opacity 20s ease-in-out 18s infinite both ;    
+}
+#Front-circle{
+    animation: circle-color 20s ease-in-out 18s infinite both ; 
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    5%,30%{
+        opacity: 1;
+    }
+    35%,100%{
+        opacity: 0;
+    }
+}
+
+@keyframes circle-color {
+    0%{
+        fill: #06020A;
+    }
+    5%,30%{
+        fill: $white-normal;
+    }
+    35%,100%{
+        fill: #06020A;
+    }
+}

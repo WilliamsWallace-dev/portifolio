@@ -1,0 +1,16 @@
+.afterSectionHero{
+    justify-content: space-around;
+    p{
+        max-width: 650px;
+    }
+    @include responsive(s){
+        // align-items: flex-start;
+        // row-gap: 16px;
+        flex-direction: row;
+        justify-content: space-around;
+        p{
+            max-width: 220px;
+            // border: 1px solid red;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<svg width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="iconLocalization">
+<path id="Vector" d="M21 11C21 18.7778 11 25.4444 11 25.4444C11 25.4444 1 18.7778 1 11C1 8.34784 2.05357 5.8043 3.92893 3.92893C5.8043 2.05357 8.34784 1 11 1C13.6522 1 16.1957 2.05357 18.0711 3.92893C19.9464 5.8043 21 8.34784 21 11Z" stroke="url(#paint0_linear_138_1205)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M11 14.3333C12.8409 14.3333 14.3333 12.841 14.3333 11C14.3333 9.15906 12.8409 7.66667 11 7.66667C9.15901 7.66667 7.66663 9.15906 7.66663 11C7.66663 12.841 9.15901 14.3333 11 14.3333Z" stroke="url(#paint1_linear_138_1205)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_138_1205" x1="21" y1="0.999997" x2="-3.12274" y2="8.4012" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D0896"/>
+<stop offset="1" stop-color="#AB40D6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_138_1205" x1="14.3333" y1="7.66667" x2="6.62009" y2="10.5591" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D0896"/>
+<stop offset="1" stop-color="#AB40D6"/>
+</linearGradient>
+</defs>
+</svg>
