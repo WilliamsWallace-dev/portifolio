@@ -16,7 +16,9 @@
   @media  screen and (min-width : 960px) {
     animation : starsMov1 60s linear 0s infinite normal both
   } 
-  animation : starsMov1 60s linear 0s infinite normal both
+  @include responsive(s){
+    display: none;
+  }
   
 }
 
@@ -45,10 +47,7 @@
   @media  screen and (min-width : 960px) {
     animation : starsMov2 60s linear 3s infinite normal both
   }
-  // animation : starsMov2 60s linear 3s infinite normal both
-  @include responsive(s){
-    display: none;
-  }
+  animation : starsMov2 60s linear 3s infinite normal both
   
 }
 
