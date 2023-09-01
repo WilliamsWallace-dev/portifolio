@@ -14,9 +14,19 @@
   color: #ECDFF0;
 }
 
+.greenColor {
+  color: #32d957;
+  opacity: 0.64;
+}
+
+.yellowColor {
+  color: #ffce52;
+  opacity: 0.64;
+}
+
 .container {
   max-width: 1440px;
-  margin: 64px auto;
+  margin: 96px auto;
   padding: 32px 24px;
   display: flex;
   justify-content: center;
@@ -27,7 +37,8 @@
 @media screen and (max-width: 960px) {
   .container {
     flex-direction: column;
-    padding: 32px 18px;
+    padding: 16px 18px;
+    margin: 32px auto;
   }
 }
 
@@ -125,12 +136,6 @@
 
 @media screen and (max-width: 960px) {
   .mobile-none {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .mobile-xs-none {
     display: none;
   }
 }
@@ -272,6 +277,20 @@ h5 {
     font-size: 12px;
     line-height: 150%;
   }
+}
+
+.p3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ECDFF0;
+}
+
+.p4 {
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 32px;
 }
 
 .textButton-1 {
@@ -1207,7 +1226,7 @@ img {
     opacity: 0;
   }
   100% {
-    top: 15%;
+    top: -3%;
     right: 1%;
     transform: scale(1);
     opacity: 1;
@@ -1584,7 +1603,7 @@ img {
 @media screen and (max-width: 960px) {
   .svgTechs {
     width: 100%;
-    transform: translateY(32%);
+    transform: translateY(-5%);
   }
 }
 .svgTechs #Sombra1 {
@@ -1678,31 +1697,38 @@ img {
 .CourseSection {
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 @media screen and (max-width: 960px) {
   .CourseSection {
-    height: 80vh;
+    height: auto;
   }
 }
 .CourseSection .titleSection {
   align-self: flex-start;
 }
 
+.courseItem h4 {
+  display: flex;
+  align-items: center;
+}
+.courseItem h4::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  background-image: url("../assets/Icon/IconArrowList.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .SVGCv {
   position: absolute;
   z-index: -999;
   width: 100%;
-  height: 140%;
-}
-@media screen and (max-width: 960px) {
-  .SVGCv {
-    width: 100%;
-    transform: translateY(30px);
-  }
+  height: 120%;
 }
 
 #circle-blue {
@@ -1836,6 +1862,11 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .AboutSection {
+    height: 70%;
+  }
 }
 .AboutSection img {
   border-radius: 32px;
@@ -2018,7 +2049,7 @@ img {
 }
 @media screen and (max-width: 960px) {
   .SVGAboutUp {
-    top: -25%;
+    top: -50%;
   }
 }
 
@@ -2032,7 +2063,7 @@ img {
 }
 @media screen and (max-width: 960px) {
   .SVGAboutDown {
-    bottom: -25%;
+    bottom: -50%;
   }
 }
 
@@ -2273,6 +2304,8 @@ img {
 @media screen and (max-width: 960px) {
   .ContactSectionContainer {
     height: 60vh;
+    margin-top: 80px;
+    transform: translateY(40px);
   }
 }
 .ContactSectionContainer .ContactSectionContent {
@@ -2335,7 +2368,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 8px;
+    padding: 12px 12px;
   }
   .footerContainer > div {
     min-width: 110px;

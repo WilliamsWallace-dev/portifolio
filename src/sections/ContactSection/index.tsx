@@ -5,7 +5,7 @@ import { SVGContact } from "../../svg/SVGContact"
 export const ContactSection = ()=>{
     return(
         <>
-            <div className="ContactSectionContainer relative w-100 px-2">
+            <div className="ContactSectionContainer relative w-100 px-2 ">
                 <SVGContact></SVGContact>
                 <section className="ContactSectionContent flex-center flex-column">
                     <div className="profileImage mb-2"></div>

@@ -3,7 +3,7 @@
 export const SVGCv = ()=>{
     return(
         <>
-     <svg width="1576" height="1576" viewBox="0 0 1576 1576" className="SVGCv" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <svg width="1576" height="1576" viewBox="0 0 1576 1576" className="SVGCv mobile-none" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="SVGCvMobile">
 <g id="circle-shadow-3" filter="url(#filter0_di_393_1768)">
 <circle id="Ellipse 260" cx="787.517" cy="787.517" r="600" transform="rotate(-66.8599 787.517 787.517)" fill="#06020A"/>

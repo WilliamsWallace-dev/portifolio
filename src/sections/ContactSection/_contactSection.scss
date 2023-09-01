@@ -6,6 +6,9 @@
 
     @include responsive(s){
         height: 60vh;
+        margin-top: 80px;
+        
+        transform: translateY(40px);
     }
     // border: 1px solid red;
 

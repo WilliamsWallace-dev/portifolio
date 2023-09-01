@@ -134,6 +134,21 @@ h5 {
     @include typeface-2(p2, mobile);
   }
 }
+.p3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $white-dark;
+}
+.p4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 32px;
+  // color: $white-dark;
+}
+
+
 
 .textButton-1{
   font-family: 'Oxanium', cursive;

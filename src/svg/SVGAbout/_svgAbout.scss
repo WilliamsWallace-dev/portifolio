@@ -8,7 +8,7 @@
     z-index: -99;
 
     @include responsive(s){
-        top: -25%;
+        top: -50%;
     }
 }
 
@@ -22,7 +22,7 @@
     z-index: -99;
 
     @include responsive(s){
-        bottom: -25%;
+        bottom: -50%;
     }
 }
 

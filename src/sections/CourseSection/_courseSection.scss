@@ -4,15 +4,36 @@
     height: 100vh;
 
     @include responsive(s){
-        height: 80vh;
+        height: auto;
     }
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
     .titleSection{
         // border: 1px solid red;
         align-self: flex-start;
+    }
+}
+
+.courseItem{
+    h4{
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        &::before{
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height:20px;
+            // border: 1px solid red;
+            margin-right: .5rem;
+            background-image: url("../assets/Icon/IconArrowList.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 }
