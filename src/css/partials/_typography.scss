@@ -36,7 +36,15 @@
     font-weight: 500;
     line-height: 140%;
   } @else if $size == h5 and $device == mobile {
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+  }@else if $size == h6 and $device == desktop {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 14px;
     font-weight: 500;
     line-height: 150%;
   }
@@ -117,6 +125,14 @@ h5 {
   @include typeface-1(h5, desktop);
   @include responsive(s) {
     @include typeface-1(h5, mobile);
+  }
+}
+
+h6 {
+  color: $white-dark;
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
   }
 }
 

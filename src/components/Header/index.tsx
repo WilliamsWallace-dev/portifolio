@@ -13,7 +13,7 @@ export const Header = ()=>{
             </section>
             <section className="headerMobile ">
                 <div className="flex-center flex-between w-100">
-                    <button className="btn-2 mr-3 ">CV</button>
+                    <button className="btn-2 mr-3 ">Download CV</button>
                     <button className="btn-1 ">Entrar em contato</button>
                 </div>
             </section>

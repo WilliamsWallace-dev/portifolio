@@ -10,7 +10,7 @@ export const CourseSection = ()=>{
                     <h5 className="mb-1">Formação</h5>
                     <h2>Cursos Realizados</h2>
                 </div>
-                <ul className="mt-2 mb-4">
+                <ul className="mt-2 mb-4 desktop-none">
                     <li className="courseItem mb-1">
                         <h4>Análise e Desenvolvimento de Sistemas - Unicesumar</h4>
                         <p className="p4 greenColor my-1">Completo</p>
