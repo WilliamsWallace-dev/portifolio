@@ -33,9 +33,27 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-
-        margin: 0;
+        
+        max-width: 1440px;
+        margin: 0 auto;
         padding: 0 18px;
+
+        @include responsive(s){
+            flex-direction: column;
+
+            padding: 16px 18px;
+            margin: 16px auto;
+
+            div{
+                margin-top: 16px;
+            }
+
+            h6{
+                margin-bottom: 4px;
+            }
+            
+        }
+
 
         .info{
             color: $gray-2;
@@ -48,6 +66,85 @@
         bottom: 10%;
 
         // margin: 32px 0px;
-        padding: 16px 18px;
+        padding: 16px 32px;
+    }
+    .techContainer{
+        max-width: 1440px;
+        // max-width: $container-xl;
+        margin: 32px auto;
+
+        padding: 32px 24px;
+
+        @include responsive(s){
+            padding: 16px 18px;
+        }
+
+        display: flex;
+        justify-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .techList{
+        display: flex;
+        align-items: center;
+        justify-items: flex-start;
+        .techItem{
+            margin: 16px;
+            h6{
+                margin-top: 8px;
+                text-transform: uppercase;
+                font-size: 14px;
+
+                @include responsive(s){
+                    font-size: 12px;
+                }
+            }
+            .iconTech{
+                width: 48px;
+                height: 48px;
+
+                @include responsive(s){
+                    width: 32px;
+                    height: 32px;
+                }
+                
+                img{
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+                // border: 1px solid red;
+            }
+        }
+    }
+
+    .nextProject{
+        a{text-decoration: none;}
+        .link{
+            &::after{
+                content: "";
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 2px;
+                @include responsive(s){
+                    margin-top: 8px;
+                }
+                background: linear-gradient(110deg, #AB40D6 19.41%, #841AB0 92.73%);
+
+                transition: .5s ease;
+            }
+        @media screen and (min-width : 960px){
+            &::after{
+                width: 0%;
+            }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+        }
+        }
     }
 }

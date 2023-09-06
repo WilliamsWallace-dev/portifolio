@@ -2464,8 +2464,22 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 18px;
+}
+@media screen and (max-width: 960px) {
+  .descriptionProject .infoSection {
+    flex-direction: column;
+    padding: 16px 18px;
+    margin: 16px auto;
+  }
+  .descriptionProject .infoSection div {
+    margin-top: 16px;
+  }
+  .descriptionProject .infoSection h6 {
+    margin-bottom: 4px;
+  }
 }
 .descriptionProject .infoSection .info {
   color: #817884;
@@ -2474,5 +2488,79 @@ img {
   display: block;
   position: absolute;
   bottom: 10%;
-  padding: 16px 18px;
+  padding: 16px 32px;
+}
+.descriptionProject .techContainer {
+  max-width: 1440px;
+  margin: 32px auto;
+  padding: 32px 24px;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .descriptionProject .techContainer {
+    padding: 16px 18px;
+  }
+}
+.descriptionProject .techList {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+}
+.descriptionProject .techList .techItem {
+  margin: 16px;
+}
+.descriptionProject .techList .techItem h6 {
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+@media screen and (max-width: 960px) {
+  .descriptionProject .techList .techItem h6 {
+    font-size: 12px;
+  }
+}
+.descriptionProject .techList .techItem .iconTech {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 960px) {
+  .descriptionProject .techList .techItem .iconTech {
+    width: 32px;
+    height: 32px;
+  }
+}
+.descriptionProject .techList .techItem .iconTech img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.descriptionProject .nextProject a {
+  text-decoration: none;
+}
+.descriptionProject .nextProject .link::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(110deg, #AB40D6 19.41%, #841AB0 92.73%);
+  transition: 0.5s ease;
+}
+@media screen and (max-width: 960px) {
+  .descriptionProject .nextProject .link::after {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .descriptionProject .nextProject .link::after {
+    width: 0%;
+  }
+  .descriptionProject .nextProject .link:hover::after {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

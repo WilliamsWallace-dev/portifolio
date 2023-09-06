@@ -12,21 +12,17 @@
 // import { LuzMov1, LuzMov2, LuzMov3, LuzMov4 } from "./svg/LuzMovHero"
 // import { SVGHero } from "./svg/SVGHero"
 
-import { DescriptionProject } from "./sections/DescriptionProject"
+import React from "react"
+import { AppRoutes } from "./router"
 
 function App() {
 
   return (
     <>
-      {/* <Hero></Hero>
-      <AfterSectionHero></AfterSectionHero>
-      <TechSection></TechSection>
-      <ProjectSection></ProjectSection>
-      <CourseSection></CourseSection>
-      <AboutSection></AboutSection>
-      <ContactSection></ContactSection>
-      <Footer></Footer> */}
-      <DescriptionProject></DescriptionProject>
+    <React.StrictMode>
+      <AppRoutes></AppRoutes>
+    </React.StrictMode>
+      
     </>
   )
   
