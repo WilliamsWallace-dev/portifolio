@@ -1,9 +1,10 @@
 .svgTechs{
-    width: 80%;
+    width: 60%;
 
     @include responsive(s){
         width: 100%;
-        transform: translateY(-5%);
+        transform: translateY(10%);
+        bottom: 0;
         
     }
     // height: 100vh;
@@ -12,8 +13,8 @@
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 0;
-    transform: translateY(40%);
+    bottom: -50px;
+    // transform: translateY(40%);
     margin: 0 auto;
     object-fit: cover;
     

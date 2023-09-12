@@ -5,9 +5,19 @@
   object-position: initial;
   padding: 4px;
   margin: 0 4px 0 4px;
+
+  cursor: pointer;
   
   // border: 1px solid red;
+
+  transition: .3s ease ;
+
+  &:hover{
+    transform: scale(1.05) translateY(-2px);
+  }
 }
+
+
 
 .iconLocalization{
   font-size: 20px;

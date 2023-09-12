@@ -1,8 +1,47 @@
-
+import { useEffect} from "react"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 
 export const SVGContact = ()=>{
+
+
+    // gsap.registerPlugin(ScrollTrigger);
+    // useEffect(() => {
+    //   gsap.to( ".SVGContact",{
+    //     duration : 5,
+    //     scrollTrigger:{
+    //         trigger:".SVGContact",
+    //         // start: 'top 100%',
+    //         // end : 'bottom 100%',
+    //         toggleClass : 'SVGContactAnimation',
+    //         // markers: true
+    //     }
+
+    //   })
+    // },[])
+
+    gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+      gsap.to( ".SVGContact",{
+        duration : 10,
+        scrollTrigger:{
+            trigger:".SVGContact",
+            start: '-20% 40%',
+            // end : 'bottom 100%',
+            onEnter : ()=>{
+              document.querySelector(".SVGContact")?.classList.add("SVGContactAnimation");
+            },
+            // markers: true
+        }
+
+      })
+    },[])
+
+
+
+
     return(
         <>
            <svg width="1517" height="1029" viewBox="0 0 1517 1029" className="SVGContact" fill="none" xmlns="http://www.w3.org/2000/svg">

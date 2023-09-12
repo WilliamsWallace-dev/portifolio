@@ -1,10 +1,31 @@
-
+import { useEffect} from "react"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 export const SVGAboutUp = ()=>{
+
+   gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+      gsap.to( ".SVGAboutUp",{
+        duration : 10,
+        scrollTrigger:{
+            trigger:".SVGAboutUp",
+            start: '-20% 40%',
+            // end : 'bottom 100%',
+            onEnter : ()=>{
+              document.querySelector(".SVGAboutUp")?.classList.add("SVGAboutAnimation");
+            },
+            // markers: true
+        }
+
+      })
+    },[])
+
+
    return(
     <>
-      <svg width="2552" height="876" viewBox="0 0 2552 876" fill="none" className="SVGAboutUp mobile-none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="2552" height="876" viewBox="0 0 2552 876" fill="none" className="SVGAboutUp mobile-none " xmlns="http://www.w3.org/2000/svg">
 <g id="SVGAboutUp">
 <mask id="mask0_336_1496" style={{maskType : "alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="2552" height="876">
 <path id="Rectangle 1010" d="M0 0H2552V876H0V0Z" fill="url(#paint0_linear_336_1496)"/>
@@ -240,9 +261,30 @@ export const SVGAboutUp = ()=>{
 
 
 export const SVGAboutDown = ()=>{
+
+
+   gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+      gsap.to( ".SVGAboutDown",{
+        duration : 10,
+        scrollTrigger:{
+            trigger:".SVGAboutDown",
+            start: '-20% 40%',
+            // end : 'bottom 100%',
+            onEnter : ()=>{
+              document.querySelector(".SVGAboutDown")?.classList.add("SVGAboutAnimation");
+            },
+            // markers: true
+        }
+
+      })
+    },[])
+
+
+
    return(
     <>
-      <svg width="2552" height="876" viewBox="0 0 2552 876" fill="none" className="SVGAboutDown mobile-none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="2552" height="876" viewBox="0 0 2552 876" fill="none" className="SVGAboutDown mobile-none " xmlns="http://www.w3.org/2000/svg">
 <g id="SVGAboutDown">
 <mask id="mask0_346_1497" style={{maskType : "alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="2552" height="876">
 <path id="Rectangle 1010" d="M2552 876H0V-3.00407e-05H2552V876Z" fill="url(#paint0_linear_346_1497)"/>
@@ -480,9 +522,29 @@ export const SVGAboutDown = ()=>{
 
 
 export const SVGAboutUpMobile = ()=>{
+
+
+   gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+      gsap.to( ".SVGAboutUpMobile",{
+        duration : 10,
+        scrollTrigger:{
+            trigger:".SVGAboutUpMobile",
+            start: '-20% 40%',
+            // end : 'bottom 100%',
+            onEnter : ()=>{
+              document.querySelector(".SVGAboutUpMobile")?.classList.add("SVGAboutAnimation");
+            },
+            // markers: true
+        }
+
+      })
+    },[])
+
+
    return(
     <>
-     <svg width="2552" height="876" viewBox="0 0 2552 876" className="SVGAboutUp desktop-none" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <svg width="2552" height="876" viewBox="0 0 2552 876" className="SVGAboutUp SVGAboutUpMobile desktop-none" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="SVGAboutUpMobile">
 <mask id="mask0_401_2630" style={{maskType : "alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="2552" height="876">
 <path id="Rectangle 1010" d="M0 0H2552V876H0V0Z" fill="url(#paint0_linear_401_2630)"/>
@@ -720,9 +782,28 @@ export const SVGAboutUpMobile = ()=>{
 
 
 export const SVGAboutDownMobile = ()=>{
+
+   gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+      gsap.to( ".SVGAboutDownMobile",{
+        duration : 10,
+        scrollTrigger:{
+            trigger:".SVGAboutDownMobile",
+            start: '-60% 40%',
+            // end : 'bottom 100%',
+            onEnter : ()=>{
+              document.querySelector(".SVGAboutDownMobile")?.classList.add("SVGAboutAnimation");
+            },
+            // markers: true
+        }
+
+      })
+    },[])
+
+
    return(
     <>
-      <svg width="2552" height="876" viewBox="0 0 2552 876" className="SVGAboutDown desktop-none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="2552" height="876" viewBox="0 0 2552 876" className="SVGAboutDown SVGAboutDownMobile desktop-none" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="SVGAboutDownMobile">
 <mask id="mask0_397_2521" style={{maskType : "alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="2552" height="876">
 <path id="Rectangle 1010" d="M2552 876H0V-3.00407e-05H2552V876Z" fill="url(#paint0_linear_397_2521)"/>

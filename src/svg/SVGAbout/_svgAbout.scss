@@ -7,6 +7,8 @@
     width: 100%;
     z-index: -99;
 
+    opacity: 0;
+
     @include responsive(s){
         top: -50%;
     }
@@ -15,14 +17,35 @@
 .SVGAboutDown{
     position: absolute;
     bottom: -20%;
-    left: -0%;
+    left: 0%;
     // border: 2px solid red;
     margin: 0 auto;
     width: 100%;
     z-index: -99;
 
+    opacity: 0;
+
     @include responsive(s){
         bottom: -50%;
+    }
+}
+
+.SVGAboutAnimation{
+    animation: AboutAnimation 5s ease-in-out 0s 1 both ;
+}
+
+@keyframes AboutAnimation {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: .85;
+    }
+    60%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
     }
 }
 

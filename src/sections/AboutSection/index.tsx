@@ -27,17 +27,17 @@ export const AboutSection = ()=>{
                 <SVGAboutDownMobile></SVGAboutDownMobile>
                 <section className="AboutSection container ">
                     <div className="AboutDescription flex-center flex-column mr-5 ">
-                        <h5 className="">About Me</h5>
-                        <h2>Williams Wallace</h2>                      
-                        <p className="p2 mt-1 presentation-1">Olá, sou o Williams Wallace, um Desenvolvedor Front-end com formação em 
+                        <h5 data-aos-delay="0" data-aos-duration="1500" data-aos="fade-up" className="">About Me</h5>
+                        <h2 data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Williams Wallace</h2>                      
+                        <p data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up" className="p2 mt-1 presentation-1">Olá, sou o Williams Wallace, um Desenvolvedor Front-end com formação em 
                         Análise e Desenvolvimento de Software. Minha abordagem é focada na criação de interfaces criativas e amigáveis, garantindo 
                         que os sites e aplicativos que desenvolvo sejam atrativos e funcionais. Sou conhecido pela 
                         criatividade, disciplina e por estar sempre trazendo novas ideias de forma proativa.</p>
-                        <p className="p2 mt-1 presentation-2">Williams Wallace, Desenvolvedor Front-end especializado em criar interfaces atrativas e funcionais para sites e aplicativos. Reconhecido pela criatividade e disciplina na geração proativa de ideias. Formado em Análise e Desenvolvimento de Software.</p>
+                        <p data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up" className="p2 mt-1 presentation-2">Williams Wallace, Desenvolvedor Front-end especializado em criar interfaces atrativas e funcionais para sites e aplicativos. Reconhecido pela criatividade e disciplina na geração proativa de ideias. Formado em Análise e Desenvolvimento de Software.</p>
                     </div>
                     <div className="imgContainer relative ">
-                        <div className="image1"><img  src={aboutImage1} alt="" /></div>
-                        <div className="image12"><img src={aboutImage12} alt="" /></div>
+                        <div data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up" className="image1"><img  src={aboutImage1} alt="" /></div>
+                        <div data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up" className="image12"><img src={aboutImage12} alt="" /></div>
                     </div>
                 </section>
 

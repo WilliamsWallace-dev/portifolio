@@ -13,59 +13,116 @@
     }
 
     #EfeitoLuz1{
-        filter: blur(250px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(250px); 
+        opacity: 0;
     }
     #EfeitoLuz2{
-        filter: blur(0px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(0px); 
+        opacity: 0;
     }
     #EfeitoLuz3{
-        filter: blur(200px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(200px); 
+        opacity: 0;
     }
     #EfeitoLuz4{
-        filter: blur(200px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(200px); 
+        opacity: 0;
     }
     #EfeitoLuz5{
-        filter: blur(210px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(210px); 
+        opacity: 0;
     }
     #EfeitoLuz6{
-        filter: blur(100px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(100px); 
+        opacity: 0;
     }
     #EfeitoLuz7{
-        filter: blur(125px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(125px); 
+        opacity: 0;
     }
     #EfeitoLuz8{
-        filter: blur(100px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(100px); 
+        opacity: 0;
     }
     #EfeitoLuz9{
-        filter: blur(125px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        filter: blur(125px); 
+        opacity: 0;
     }
     #EfeitoLuz10{
         filter: blur(125px);
-        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+        opacity: 0;
     }
     #EfeitoLuz11{
         filter: blur(50px);
+        opacity: 0;
+    }
+    #LuzEfeitoVariaGradiente1{
+        filter: blur(170px);        
+        opacity: 0;
+    }
+    #LuzEfeitoVariaGradiente2{
+        filter: blur(170px);        
+        opacity: 0;
+    }
+    #Vector{
+        filter: blur(.6px);        
+        opacity: 0;
+  }
+}
+
+.SVGContactAnimation{
+    #EfeitoLuz1{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz2{
+               animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz3{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz4{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz5{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz6{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz7{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz8{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz9{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz10{
+        
+        animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
+    }
+    #EfeitoLuz11{
         animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
     }
     #LuzEfeitoVariaGradiente1{
-        filter: blur(170px); 
+         
         animation: opacityAnimationGradient 20s ease-in-out 7s infinite both ;
     }
     #LuzEfeitoVariaGradiente2{
-        filter: blur(170px); 
+         
         animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both ;
     }
     #Vector{
-        filter: blur(.6px); 
+        
         animation: vetorAnimationContactSection 5s ease-in-out 2s 1 both ;
     }
     #stars{
@@ -118,8 +175,4 @@
         }
         
       }
-
-      
-
-
 }

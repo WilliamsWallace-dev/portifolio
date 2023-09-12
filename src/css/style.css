@@ -753,6 +753,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .border {
   border: 1px solid red;
 }
@@ -770,6 +774,11 @@ img {
      object-position: initial;
   padding: 4px;
   margin: 0 4px 0 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.icon-svg:hover {
+  transform: scale(1.05) translateY(-2px);
 }
 
 .iconLocalization {
@@ -934,20 +943,21 @@ img {
 }
 #circle1 {
   transform-origin: 50% 50%;
-  animation: circle1 10s linear 0s infinite alternate both;
-}
-@media screen and (min-width: 960px) {
-  #circle1 {
-    animation: circle1 10s linear 0s infinite alternate both;
-  }
+  animation: circle1 10s ease 0s infinite alternate both;
 }
 
 @keyframes circle1 {
   0% {
-    transform: rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.3;
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
 #circle2 {
@@ -1210,12 +1220,11 @@ img {
     right: 3.5%;
   }
 }
-.Techs {
-  position: absolute;
+.TechsAnimation {
   animation: Techs 3s ease-in-out 0s 1 normal both;
 }
 @media screen and (max-width: 960px) {
-  .Techs {
+  .TechsAnimation {
     animation: TechsMobile 3s ease-in-out 0s 1 normal both;
   }
 }
@@ -1228,7 +1237,7 @@ img {
     opacity: 0;
   }
   100% {
-    top: 0%;
+    top: -10%;
     right: 1%;
     transform: scale(1);
     opacity: 1;
@@ -1298,6 +1307,10 @@ img {
 
 #IconFigma {
   animation: techsAnimation 20s cubic-bezier(0.25, 0.25, 0.75, 0.75) 5s infinite alternate-reverse both;
+}
+
+#IconFirebase {
+  animation: techsAnimation 20s cubic-bezier(0.25, 0.25, 0.75, 0.75) 3s infinite alternate-reverse both;
 }
 
 @keyframes techsAnimation {
@@ -1547,6 +1560,22 @@ img {
   }
 }
 
+.secondContent {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.secondContent h4:nth-last-of-type(2) {
+  align-self: flex-end;
+}
+.secondContent h4:nth-last-of-type(1) {
+  padding-right: 8px;
+  align-self: flex-start;
+}
+
 .techSectionContainer {
   width: 100%;
   height: 90vh;
@@ -1605,12 +1634,11 @@ img {
 }
 
 .svgTechs {
-  width: 80%;
+  width: 60%;
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 0;
-  transform: translateY(40%);
+  bottom: -50px;
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1619,7 +1647,8 @@ img {
 @media screen and (max-width: 960px) {
   .svgTechs {
     width: 100%;
-    transform: translateY(-5%);
+    transform: translateY(10%);
+    bottom: 0;
   }
 }
 .svgTechs #Sombra1 {
@@ -1660,7 +1689,8 @@ img {
 }
 
 .Techs {
-  width: 50%;
+  opacity: 0;
+  width: 35%;
   position: absolute;
   right: 0;
   left: 0;
@@ -2062,6 +2092,7 @@ img {
   margin: 0 auto;
   width: 100%;
   z-index: -99;
+  opacity: 0;
 }
 @media screen and (max-width: 960px) {
   .SVGAboutUp {
@@ -2076,6 +2107,7 @@ img {
   margin: 0 auto;
   width: 100%;
   z-index: -99;
+  opacity: 0;
 }
 @media screen and (max-width: 960px) {
   .SVGAboutDown {
@@ -2083,6 +2115,24 @@ img {
   }
 }
 
+.SVGAboutAnimation {
+  animation: AboutAnimation 5s ease-in-out 0s 1 both;
+}
+
+@keyframes AboutAnimation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.85;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .Polygon3 {
   filter: blur(270px);
 }
@@ -2215,61 +2265,104 @@ img {
 }
 .SVGContact #EfeitoLuz1 {
   filter: blur(250px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz2 {
   filter: blur(0px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz3 {
   filter: blur(200px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz4 {
   filter: blur(200px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz5 {
   filter: blur(210px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz6 {
   filter: blur(100px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz7 {
   filter: blur(125px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz8 {
   filter: blur(100px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz9 {
   filter: blur(125px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz10 {
   filter: blur(125px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #EfeitoLuz11 {
   filter: blur(50px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #LuzEfeitoVariaGradiente1 {
   filter: blur(170px);
-  animation: opacityAnimationGradient 20s ease-in-out 7s infinite both;
+  opacity: 0;
 }
 .SVGContact #LuzEfeitoVariaGradiente2 {
   filter: blur(170px);
-  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+  opacity: 0;
 }
 .SVGContact #Vector {
   filter: blur(0.6px);
+  opacity: 0;
+}
+
+.SVGContactAnimation #EfeitoLuz1 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz2 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz3 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz4 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz5 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz6 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz7 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz8 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz9 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz10 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #EfeitoLuz11 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #LuzEfeitoVariaGradiente1 {
+  animation: opacityAnimationGradient 20s ease-in-out 7s infinite both;
+}
+.SVGContactAnimation #LuzEfeitoVariaGradiente2 {
+  animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
+}
+.SVGContactAnimation #Vector {
   animation: vetorAnimationContactSection 5s ease-in-out 2s 1 both;
 }
-.SVGContact #stars {
+.SVGContactAnimation #stars {
   animation: opacityAnimationContactSection 10s ease-in-out 0s 1 both;
 }
 @keyframes vetorAnimationContactSection {

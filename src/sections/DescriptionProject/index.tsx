@@ -14,34 +14,35 @@ export const DescriptionProject = ()=>{
         <>
             <section className="descriptionProject">
                 <div className="mainSection w-100 relative">
-                    <div className="background"><img src={project.background} alt="" /></div>
+                    <div className="background" data-aos-delay="0" data-aos-duration="1500" data-aos="fade-up"><img src={project.background} alt="" /></div>
                     <div className="titleProject mt-3">
-                        <h5>Projeto</h5>
-                        <h1>{project.name}</h1>
-                        <a href={project.deploy} target="_blank"><button className="btn-1 mt-1">Abrir site</button></a>
+                        <h5 data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Projeto</h5>
+                        <h1 data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">{project.name}</h1>
+                        <a href={project.deploy} target="_blank"><button className="btn-1 mt-1" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">Abrir site</button></a>
                     </div>
                 </div>
                 <div className="infoSection">
                     <div className="mr-3">
-                        <h6 className="mb-2">Função</h6>
-                        <p className="p2 info">{project.role}</p>
+                        <h6 className="mb-2" data-aos-anchor=".info" data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Função</h6>
+                        <p className="p2 info" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">{project.role}</p>
                     </div>
                     <div className="mr-3">
-                        <h6 className="mb-2">Cliente</h6>
-                        <p className="p2 info">{project.client}</p>
+                        <h6 className="mb-2" data-aos-anchor=".info" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">Cliente</h6>
+                        <p className="p2 info" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">{project.client}</p>
                     </div>
                     <div className="mr-3">
-                        <h6 className="mb-2">Descrição</h6>
-                        <p className="p2 info">{project.decription}</p>
+                        <h6 className="mb-2" data-aos-anchor=".info" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">Descrição</h6>
+                        {project.test ? <p className="p2 info" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">{project.description}<br/>Usuário : {project.test.username}<br/>Senha : {project.test.password}<br/>Observação : {project.test.obs}</p> : project.description}
+                        
                     </div>
                     <div className="">
-                        <h6 className="mb-2">Objetivos</h6>
-                        <p className="p2 info">{project.gols}</p>
+                        <h6 className="mb-2" data-aos-anchor=".info" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">Objetivos</h6>
+                        <p className="p2 info" data-aos-delay="500" data-aos-duration="1500" data-aos="fade-up">{project.gols}</p>
                     </div>
                 </div>
                 <div className="techContainer">
-                    <h6 className="">Objetivos</h6>
-                    <ul className="techList flex-wrap">
+                    <h6 className="" data-aos-delay="500" data-aos-duration="1500" data-aos="fade-up">Tecnologias</h6>
+                    <ul className="techList flex-wrap" data-aos-delay="600" data-aos-duration="1500" data-aos="fade-up">
                         
                             {
                                 project.techs.map((tech)=>{
@@ -59,10 +60,10 @@ export const DescriptionProject = ()=>{
                     </ul>
                 </div>
                 <div className="nextProject flex-center flex-column my-4 ">
-                    <h5>Proximo Projeto</h5>
-                    {parseInt(project.id) != 4 ? <Link to = {`../${ProjectData[parseInt(project.id)].name}/${ProjectData[parseInt(project.id)].id}`} ><a ><h2 className="link">{ProjectData[parseInt(project.id)].name}</h2></a></Link> : <Link to = {`../${ProjectData[0].name}/${ProjectData[0].id}`} ><a ><h2 className="link">{ProjectData[0].name}</h2></a></Link> } 
-                    <p className="p1 my-2">ou</p>
-                    <Link to="/"><button className="btn-2">Página Principal</button></Link>
+                    <h5 data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Proximo Projeto</h5>
+                    {parseInt(project.id) != 4 ? <Link to = {`../${ProjectData[parseInt(project.id)].name}/${ProjectData[parseInt(project.id)].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">{ProjectData[parseInt(project.id)].name}</h2></a></Link> : <Link to = {`../${ProjectData[0].name}/${ProjectData[0].id}`} ><a ><h2 className="link">{ProjectData[0].name}</h2></a></Link> } 
+                    <p className="p1 my-2" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">ou</p>
+                    <Link to="/"><button className="btn-2" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">Página Principal</button></Link>
                 </div>
                 
             </section>
