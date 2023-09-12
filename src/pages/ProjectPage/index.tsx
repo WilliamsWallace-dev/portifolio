@@ -1,9 +1,14 @@
+import { ScrollToTop } from "../../components/ScrollToTop"
 import { DescriptionProject } from "../../sections/DescriptionProject"
 
 
 
 export const ProjectPage = ()=>{
     return(
-        <DescriptionProject></DescriptionProject>
+        <>
+            <ScrollToTop></ScrollToTop>
+            <DescriptionProject></DescriptionProject>
+        </>
+        
     )
 }

@@ -1,3 +1,4 @@
+import { ScrollToTop } from "../../components/ScrollToTop"
 import { AboutSection } from "../../sections/AboutSection"
 import { AfterSectionHero } from "../../sections/AfterSectionHero"
 import { ContactSection } from "../../sections/ContactSection"
@@ -10,6 +11,7 @@ import { TechSection } from "../../sections/TechSection"
 export const Home = ()=>{
     return(
         <>
+            <ScrollToTop></ScrollToTop>
             <Hero></Hero>
             <AfterSectionHero></AfterSectionHero>
             <TechSection></TechSection>
