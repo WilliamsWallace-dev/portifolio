@@ -27,6 +27,7 @@ export const ProjectData = [
         description : "Blog dedicado a filmes, séries e animes criteriosamente selecionados pelo administrador. Este blog é exclusivo para o administrador e oferece acesso à API para gerenciar e selecionar os conteúdos que serão compartilhados com a comunidade. Os usuários regulares têm a opção de criar uma conta para selecionar e salvar seus filmes favoritos, bem como aqueles que desejam assistir posteriormente. Além disso, eles têm acesso às informações sobre os conteúdos previamente selecionados pelo administrador.",
         gols : "Este projeto foi criado com o propósito de aprimorar a aplicação de conceitos relacionados ao TypeScript no contexto do React.js, além de explorar tecnologias como SASS, Axios e Firebase. Buscando criar um design criativo e intuitivo, com a finalidade de proporcionar uma experiência de usuário excepcional, além de desenvolver aplicações altamente funcionais.",
         background : BackgroundGOG,
+        gitHub : "https://github.com/WilliamsWallace-dev/WMovies",
         test: {
             username : "wwallace.dev@gmail.com",
             password : "wmoviesadm123",
@@ -66,6 +67,7 @@ export const ProjectData = [
         description : "Esta aplicação foi desenvolvida com o propósito de gerenciar bolões relacionados à Copa do Mundo de 2022, oferecendo aos usuários a capacidade de criar suas próprias contas e, por meio delas, criar ou ingressar em outros bolões utilizando senhas fornecidas pelos criadores dos bolões. Cada conta de usuário pode definir seus palpites até o início do jogo correspondente, pois após o início, as edições são bloqueadas. Além disso, os usuários têm acesso às informações de classificação dos bolões em que participam, e essas informações são atualizadas automaticamente à medida que o administrador insere os resultados no banco de dados da aplicação.",
         gols : "Esta aplicação foi criada com o propósito de enriquecer a experiência durante a Copa do Mundo de 2022, oferecendo a oportunidade de ser usada por grupos de amigos e familiares. Foi desenvolvida em um prazo de cerca de 25 dias, com mais de 100 horas dedicadas, representando nosso primeiro projeto utilizando React.js.",
         background : BackgroundWC,
+        gitHub : "https://github.com/WilliamsWallace-dev/Bol-oCopaDoMundo2022",
         test: {
             username : "Wwallace",
             password : "12345",
@@ -106,6 +108,7 @@ export const ProjectData = [
         siteRedesign : "https://jornadaga.com/",
         gols : "O foco primordial deste projeto era alcançar o meu primeiro trabalho como freelancer. Além disso, envolveu a prática de tecnologias como HTML, CSS, JavaScript e Motion Design, a criação de uma Landing Page desde a fase de design no Figma, e o estímulo à criatividade.",
         background : BackgroundVNB,
+        gitHub : "https://github.com/WilliamsWallace-dev/LandingPage-CanalYoutubeVNBdef",
         techs : [
             {
                 name : "Html",
@@ -135,6 +138,7 @@ export const ProjectData = [
         description : "Landing Page para divulgação da nova temporada de Demon Slayer.",
         gols : "Desenvolvido com objetivo de praticar a produção de design, aplicação da biblioteca GSAP, além dos princípios de UX e UI.",
         background : BackgroundDS,
+        gitHub : "https://github.com/WilliamsWallace-dev/WebPageKimetsuNoYaiba",
         techs : [
             {
                 name : "Html",

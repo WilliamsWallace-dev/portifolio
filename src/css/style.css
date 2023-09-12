@@ -2583,6 +2583,23 @@ a {
   bottom: 10%;
   padding: 16px 32px;
 }
+.descriptionProject .titleProject div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.descriptionProject .titleProject div .icon-svg {
+  width: 40px;
+  height: 40px;
+  margin-left: 32px;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 960px) {
+  .descriptionProject .titleProject div .icon-svg {
+    width: 32px;
+    margin-left: 16px;
+  }
+}
 .descriptionProject .techContainer {
   max-width: 1440px;
   margin: 32px auto;

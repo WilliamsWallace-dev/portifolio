@@ -1,4 +1,4 @@
-
+import IconGitHub  from "../../assets/Icon/iconGitHub.svg"
 import { Link, useParams } from "react-router-dom"
 import { ProjectData, projectInfo } from "../../projectData"
 
@@ -16,9 +16,16 @@ export const DescriptionProject = ()=>{
                 <div className="mainSection w-100 relative">
                     <div className="background" data-aos-delay="0" data-aos-duration="1500" data-aos="fade-up"><img src={project.background} alt="" /></div>
                     <div className="titleProject mt-3">
+                        {/* <div className=""> */}
                         <h5 data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Projeto</h5>
+                        {/* <Link to="https://github.com/WilliamsWallace-dev" target="_blank"><div className=" px-1 icon-svg"><img src={IconGitHub} alt="" /></div></Link> */}
+                        {/* </div> */}
                         <h1 data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">{project.name}</h1>
+                        <div>
                         <a href={project.deploy} target="_blank"><button className="btn-1 mt-1" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">Abrir site</button></a>
+                        <Link to={project.gitHub} target="_blank"><div className=" px-1 icon-svg"><img src={IconGitHub} alt="" /></div></Link>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className="infoSection">

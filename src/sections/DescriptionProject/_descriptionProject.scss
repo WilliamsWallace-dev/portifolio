@@ -67,6 +67,26 @@
 
         // margin: 32px 0px;
         padding: 16px 32px;
+
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            // border: 1px solid red;
+            .icon-svg{
+                // border: 1px solid red;
+                width: 40px;
+                height: 40px;
+                margin-left: 32px;
+                margin-bottom: 4px;
+                // justify-self: flex-end;
+
+                @include responsive(s){
+                    width: 32px;
+                    margin-left: 16px;
+                }
+            }
+        }
     }
     .techContainer{
         max-width: 1440px;
