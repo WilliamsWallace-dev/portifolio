@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Home } from "../pages/Home"
 import { Footer } from "../sections/Footer"
 import { ProjectPage } from "../pages/ProjectPage"
-import { ScrollToTop } from "./ScrollToTop"
+
 
 
 

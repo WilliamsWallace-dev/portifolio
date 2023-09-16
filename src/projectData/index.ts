@@ -28,6 +28,7 @@ export const ProjectData = [
         gols : "Este projeto foi criado com o propósito de aprimorar a aplicação de conceitos relacionados ao TypeScript no contexto do React.js, além de explorar tecnologias como SASS, Axios e Firebase. Buscando criar um design criativo e intuitivo, com a finalidade de proporcionar uma experiência de usuário excepcional, além de desenvolver aplicações altamente funcionais.",
         background : BackgroundGOG,
         gitHub : "https://github.com/WilliamsWallace-dev/WMovies",
+        figma : "https://www.figma.com/file/lSqBB4YlzI9MaXcxB2mk19/WMovies?type=design&node-id=5%3A35&mode=design&t=YlgDlJ7zLPyjGpWY-1",
         test: {
             username : "wwallace.dev@gmail.com",
             password : "wmoviesadm123",
@@ -68,6 +69,7 @@ export const ProjectData = [
         gols : "Esta aplicação foi criada com o propósito de enriquecer a experiência durante a Copa do Mundo de 2022, oferecendo a oportunidade de ser usada por grupos de amigos e familiares. Foi desenvolvida em um prazo de cerca de 25 dias, com mais de 100 horas dedicadas, representando nosso primeiro projeto utilizando React.js.",
         background : BackgroundWC,
         gitHub : "https://github.com/WilliamsWallace-dev/Bol-oCopaDoMundo2022",
+        figma : "https://www.figma.com/file/ugZ8ZnrldvqMOM5EnPS1H0/Bol%C3%A3oCopa2022?type=design&node-id=0%3A1&mode=design&t=7MGqU7aTlaZosTWb-1",
         test: {
             username : "Wwallace",
             password : "12345",
@@ -109,6 +111,7 @@ export const ProjectData = [
         gols : "O foco primordial deste projeto era alcançar o meu primeiro trabalho como freelancer. Além disso, envolveu a prática de tecnologias como HTML, CSS, JavaScript e Motion Design, a criação de uma Landing Page desde a fase de design no Figma, e o estímulo à criatividade.",
         background : BackgroundVNB,
         gitHub : "https://github.com/WilliamsWallace-dev/LandingPage-CanalYoutubeVNBdef",
+        figma : "https://www.figma.com/file/4rqmRU9yNNNjCBPwUmULIY/WireFrame---VNB?type=design&node-id=90%3A2&mode=design&t=Jp94IKuVp6TKEqf0-1",
         techs : [
             {
                 name : "Html",
@@ -139,6 +142,7 @@ export const ProjectData = [
         gols : "Desenvolvido com objetivo de praticar a produção de design, aplicação da biblioteca GSAP, além dos princípios de UX e UI.",
         background : BackgroundDS,
         gitHub : "https://github.com/WilliamsWallace-dev/WebPageKimetsuNoYaiba",
+        figma : "https://www.figma.com/file/WaOJmbDxfixzPnQw2kzxn2/Demon-Slayer?type=design&node-id=0%3A1&mode=design&t=ZIFShx669cQ0EZdW-1",
         techs : [
             {
                 name : "Html",
@@ -179,6 +183,8 @@ export interface projectInfo {
         description : string,
         gols : string,
         background : string,
+        gitHub : string,
+        figma : string,
         test? : {
             username : string,
             password : string,
