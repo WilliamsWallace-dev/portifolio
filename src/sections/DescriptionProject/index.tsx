@@ -32,26 +32,26 @@ export const DescriptionProject = ()=>{
                 </div>
                 <div className="infoSection">
                     <div className="mr-3">
-                        <h6 className="mb-2" data-aos-anchor-placement="top-center" data-aos-anchor=".info" data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Função</h6>
-                        <p className="p2 info" data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">{project.role}</p>
+                        <h6 className="mb-2" data-aos-anchor-placement="center-bottom" data-aos-anchor=".info" data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Função</h6>
+                        <p className="p2 info" data-aos-anchor-placement="center-bottom" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">{project.role}</p>
                     </div>
                     <div className="mr-3">
-                        <h6 className="mb-2" data-aos-anchor-placement="top-center" data-aos-anchor=".info" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">Cliente</h6>
-                        <p className="p2 info" data-aos-anchor-placement="top-center" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">{project.client}</p>
+                        <h6 className="mb-2" data-aos-anchor-placement="center-bottom" data-aos-anchor=".info" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">Cliente</h6>
+                        <p className="p2 info" data-aos-anchor-placement="center-bottom" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">{project.client}</p>
                     </div>
                     <div className="mr-3">
-                        <h6 className="mb-2" data-aos-anchor-placement="top-center" data-aos-anchor=".info" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">Descrição</h6>
-                        {project.test ? <p className="p2 info" data-aos-anchor-placement="top-center" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">{project.description}<br/>Usuário : {project.test.username}<br/>Senha : {project.test.password}<br/>Observação : {project.test.obs}</p> : <p className="p2 info" data-aos-anchor-placement="top-center" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">{project.description}</p>}
+                        <h6 className="mb-2" data-aos-anchor-placement="center-bottom" data-aos-anchor=".info" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">Descrição</h6>
+                        {project.test ? <p className="p2 info" data-aos-anchor-placement="center-bottom" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">{project.description}<br/>Usuário : {project.test.username}<br/>Senha : {project.test.password}<br/>Observação : {project.test.obs}</p> : <p className="p2 info" data-aos-anchor-placement="center-bottom" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">{project.description}</p>}
                         
                     </div>
                     <div className="">
-                        <h6 className="mb-2" data-aos-anchor-placement="top-center" data-aos-anchor=".info" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">Objetivos</h6>
-                        <p className="p2 info" data-aos-anchor-placement="top-center" data-aos-delay="500" data-aos-duration="1500" data-aos="fade-up">{project.gols}</p>
+                        <h6 className="mb-2" data-aos-anchor-placement="center-bottom" data-aos-anchor=".info" data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up">Objetivos</h6>
+                        <p className="p2 info" data-aos-anchor-placement="center-bottom" data-aos-delay="500" data-aos-duration="1500" data-aos="fade-up">{project.gols}</p>
                     </div>
                 </div>
                 <div className="techContainer">
-                    <h6 className="" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Tecnologias</h6>
-                    <ul className="techList flex-wrap" data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">
+                    <h6 className="" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Tecnologias</h6>
+                    <ul className="techList flex-wrap" data-aos-anchor-placement="center-bottom" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">
                         
                             {
                                 project.techs.map((tech)=>{
@@ -69,10 +69,10 @@ export const DescriptionProject = ()=>{
                     </ul>
                 </div>
                 <div className="nextProject flex-center flex-column my-4 ">
-                    <h5 data-aos-delay="100" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">Proximo Projeto</h5>
-                    {parseInt(project.id) != 4 ? <Link to = {`../${ProjectData[parseInt(project.id)].name}/${ProjectData[parseInt(project.id)].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[parseInt(project.id)].name}</h2></a></Link> : <Link to = {`../${ProjectData[0].name}/${ProjectData[0].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[0].name}</h2></a></Link> } 
-                    <p className="p1 my-2" data-aos-delay="300" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">ou</p>
-                    <Link to="/"><button className="btn-2" data-aos-delay="400" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">Página Principal</button></Link>
+                    <h5 data-aos-delay="100" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">Proximo Projeto</h5>
+                    {parseInt(project.id) != 4 ? <Link to = {`../${ProjectData[parseInt(project.id)].name}/${ProjectData[parseInt(project.id)].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[parseInt(project.id)].name}</h2></a></Link> : <Link to = {`../${ProjectData[0].name}/${ProjectData[0].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[0].name}</h2></a></Link> } 
+                    <p className="p1 my-2" data-aos-delay="300" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">ou</p>
+                    <Link to="/"><button className="btn-2" data-aos-delay="400" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">Página Principal</button></Link>
                 </div>
                 
             </section>
