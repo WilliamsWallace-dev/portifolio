@@ -14,7 +14,7 @@ export const Header = ()=>{
             </section>
             <section className="headerMobile ">
                 <div className="flex-center flex-between w-100" data-aos-delay="0" data-aos-duration="1500" data-aos="fade-up">
-                    <Link to="https://drive.google.com/file/d/1m8HPm4Xc0rFdUNycgHNvXi-tbgn-zWHk/view?usp=sharing" target="_blank"><button className="btn-2 mr-3 ">Download CV</button></Link>
+                    <Link to="https://drive.google.com/file/d/1bHaoC2rySsaaZi9sYB2K7KVMA-HNVEEl/view?usp=sharing" target="_blank"><button className="btn-2 mr-3 ">Download CV</button></Link>
                     <button className="btn-1 ">Entrar em contato</button>
                 </div>
             </section>
