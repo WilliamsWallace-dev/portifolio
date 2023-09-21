@@ -16,9 +16,9 @@
   @media  screen and (min-width : 960px) {
     animation : starsMov1 60s linear 0s infinite normal both
   } 
-  @include responsive(s){
-    display: none;
-  }
+  // @include responsive(s){
+  //   display: none;
+  // }
   
 }
 
@@ -44,10 +44,10 @@
 
 #starsMov2{
   transform-origin: 50% 50%;
-  @media  screen and (min-width : 960px) {
-    animation : starsMov2 60s linear 3s infinite normal both
-  }
-  animation : starsMov2 60s linear 3s infinite normal both
+  // @media  screen and (min-width : 960px) {
+  //   display: none;
+  // }
+  // animation : starsMov2 60s linear 3s infinite normal both
   
 }
 

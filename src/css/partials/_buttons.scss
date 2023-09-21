@@ -116,3 +116,35 @@ button{
     transform: translateY(-2px);
   }
 }
+
+.ScrollTotopButton{
+  position: absolute;
+  right: 10%;
+  top : -100px;
+  width: 40px;
+
+  @include responsive(s){
+    width: 24px;
+    right: 10%;
+    top : -50px;
+  }
+  
+  // border: 1px solid red;
+  img{
+    // border: 1px solid red;
+    width: 100%;
+    transform: rotate(-90deg);
+    object-fit: contain;
+
+    opacity: 30%;
+
+    @include responsive(s){
+      opacity: 50%;
+    }
+    transition: .5s ease;
+  &:hover{
+    transform: translateY(-4px) rotate(-90deg);
+    opacity: 70%;
+  }
+  }
+}
