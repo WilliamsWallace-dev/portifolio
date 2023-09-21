@@ -2456,10 +2456,6 @@ a {
   height: 82px;
   border-radius: 50%;
   position: relative;
-  background-image: url("../assets/image/profileImage.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 @media screen and (max-width: 960px) {
   .ContactSectionContainer .profileImage {

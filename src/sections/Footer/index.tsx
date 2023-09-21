@@ -19,7 +19,7 @@ export const Footer = ()=>{
                     <Link to="https://www.linkedin.com/in/williams-wallace" target="_blank"><div className=" px-1 icon-svg"><img src={IconLinkedIn} alt="" /></div></Link>
                     <Link to="https://github.com/WilliamsWallace-dev" target="_blank"><div className=" px-1 icon-svg"><img src={IconGitHub} alt="" /></div></Link>
                 </div>
-                <button className="ScrollTotopButton" data-aos-anchor-placement="top-top" data-aos-anchor=".ContactSectionContent" data-aos-delay="100" data-aos-duration="1000" data-aos="fade-up"  onClick={()=>window.scrollTo(0,0)}><img src={UpArrow} alt="" /></button>
+                <button className="ScrollTotopButton" data-aos-anchor-placement="top-center" data-aos-anchor=".ContactSectionContent" data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up"  onClick={()=>window.scrollTo(0,0)}><img src={UpArrow} alt="" /></button>
                 
             </section>
         </>
