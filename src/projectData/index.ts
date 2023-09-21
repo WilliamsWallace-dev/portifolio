@@ -25,7 +25,7 @@ export const ProjectData = [
         client : "N/A",
         resume : "Blog com filmes, séries e animes escolhidos pelo administrador, permitindo que usuários criem contas  para favoritar conteúdo.",
         description : "Blog dedicado a filmes, séries e animes criteriosamente selecionados pelo administrador. Este blog é exclusivo para o administrador e oferece acesso à API para gerenciar e selecionar os conteúdos que serão compartilhados com a comunidade. Os usuários regulares têm a opção de criar uma conta para selecionar e salvar seus filmes favoritos, bem como aqueles que desejam assistir posteriormente. Além disso, eles têm acesso às informações sobre os conteúdos previamente selecionados pelo administrador.",
-        gols : "Este projeto foi criado com o propósito de aprimorar a aplicação de conceitos relacionados ao TypeScript no contexto do React.js, além de explorar tecnologias como SASS, Axios e Firebase. Buscando criar um design criativo e intuitivo, com a finalidade de proporcionar uma experiência de usuário excepcional, além de desenvolver aplicações altamente funcionais.",
+        gols : "Este projeto foi criado com o propósito de aprimorar a aplicação de conceitos relacionados ao TypeScript no contexto do React.js, integração da aplicação com API, além de explorar tecnologias como SASS, Axios e Firebase. Buscando criar um design criativo e intuitivo, com a finalidade de proporcionar uma experiência de usuário excepcional, além de desenvolver aplicações altamente funcionais.",
         background : BackgroundGOG,
         gitHub : "https://github.com/WilliamsWallace-dev/WMovies",
         figma : "https://www.figma.com/file/lSqBB4YlzI9MaXcxB2mk19/WMovies?type=design&node-id=5%3A35&mode=design&t=YlgDlJ7zLPyjGpWY-1",
