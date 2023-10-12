@@ -181,7 +181,6 @@ export const ProjectData = [
         gols : "O principal objetivo deste projeto foi consolidar e aplicar o conhecimento adquirido no desenvolvimento Back End, com foco especial em bancos de dados NoSQL, usando o MongoDB. Além disso, buscamos demonstrar a habilidade de utilizar o framework Express e a biblioteca Mongoose para estabelecer uma sólida conexão entre a aplicação Node.js e o banco de dados MongoDB. A criação de uma aplicação prática de uma lista de tarefas (TodoList) serviu como um contexto real para aplicar esses conhecimentos. A aplicação permitia a criação de listas de tarefas, bem como a adição, edição e remoção de tarefas dentro dessas listas. O uso da biblioteca EJS como mecanismo de visualização contribuiu para uma experiência mais amigável ao usuário, tornando possível a visualização e manipulação das listas e tarefas de forma mais intuitiva.",
         background : BackgroundTDL,
         gitHub : "https://github.com/WilliamsWallace-dev/ToDoList",
-        figma : "https://www.figma.com/file/WaOJmbDxfixzPnQw2kzxn2/Demon-Slayer?type=design&node-id=0%3A1&mode=design&t=ZIFShx669cQ0EZdW-1",
         techs : [
             {
                 name : "NodeJs",
