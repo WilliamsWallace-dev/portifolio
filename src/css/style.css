@@ -840,24 +840,22 @@ a {
 }
 @media screen and (min-width: 960px) {
   #starsMov1 {
-    animation: starsMov1 60s linear 0s infinite normal both;
+    animation: starsMov1 16s linear 0s infinite normal both;
   }
 }
 
 @keyframes starsMov1 {
   0% {
     opacity: 0;
-    transform: scale(1) rotate(0deg);
   }
-  2% {
-    opacity: 1;
+  20% {
+    opacity: 0.8;
   }
   85% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: scale(0.3) rotate(45deg);
   }
 }
 #starsMov2 {
