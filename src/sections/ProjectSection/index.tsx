@@ -12,7 +12,7 @@ export const ProjectSection = ()=>{
                     <h2 data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Trabalhos Selecionados</h2>
                     <p className="p2 mt-1" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">"A criatividade é a inteligência se divertindo." - Albert Einstein</p>
                 </div>
-                {ProjectData.map((project,index)=>{
+                {ProjectData.map((project)=>{
                     return(
                         <>
                             <div className="projectContainer w-100  mt-2">
