@@ -25,7 +25,7 @@ export const DescriptionProject = ()=>{
                         <div>
                         <a href={project.deploy} target="_blank"><button className="btn-1 mt-1 mr-2" data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up">Abrir site</button></a>
                         <Link to={project.gitHub} target="_blank"><div className=" px-1 " data-aos-delay="350" data-aos-duration="1500" data-aos="fade-up"><img src={IconGitHub} alt="" className="icon-svg"/></div></Link>
-                        <Link to={project.figma} target="_blank"><div className=" px-1 " data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up"><img src={IconFigma} alt="" className="icon-svg" /></div></Link>
+                        {project.figma && <Link to={project.figma} target="_blank"><div className=" px-1 " data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up"><img src={IconFigma} alt="" className="icon-svg" /></div></Link>}
                         </div>
                         
                     </div>
@@ -70,7 +70,7 @@ export const DescriptionProject = ()=>{
                 </div>
                 <div className="nextProject flex-center flex-column my-4 ">
                     <h5 data-aos-delay="100" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">Proximo Projeto</h5>
-                    {parseInt(project.id) != 4 ? <Link to = {`../${ProjectData[parseInt(project.id)].name}/${ProjectData[parseInt(project.id)].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[parseInt(project.id)].name}</h2></a></Link> : <Link to = {`../${ProjectData[0].name}/${ProjectData[0].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[0].name}</h2></a></Link> } 
+                    {parseInt(project.id) != 5 ? <Link to = {`../${ProjectData[parseInt(project.id)].name}/${ProjectData[parseInt(project.id)].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[parseInt(project.id)].name}</h2></a></Link> : <Link to = {`../${ProjectData[0].name}/${ProjectData[0].id}`} ><a ><h2 className="link" data-aos-delay="200" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">{ProjectData[0].name}</h2></a></Link> } 
                     <p className="p1 my-2" data-aos-delay="300" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">ou</p>
                     <Link to="/"><button className="btn-2" data-aos-delay="400" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos="fade-up" data-aos-anchor=".nextProject">Página Principal</button></Link>
                 </div>

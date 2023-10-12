@@ -6,11 +6,15 @@ import javaScript from "../assets/Icon/JavaScript.svg"
 import figma from "../assets/Icon/Figma.svg"
 import gsap from "../assets/Icon/Gsap.svg"
 import firebase from "../assets/Icon/Firebase.svg"
+import mongodb from "../assets/Icon/Mongodb.svg"
+import nodejs from "../assets/Icon/Nodejs.svg"
+import css from "../assets/Icon/Css.svg"
 
 import BackgroundGOG from "../assets/image/BackgroundGOG.jpg"
 import BackgroundDS from "../assets/image/BackgroundDS.jpg"
 import BackgroundVNB from "../assets/image/BackgroundVNB.jpg"
 import BackgroundWC from "../assets/image/BackgroundWC.jpg"
+import BackgroundTDL from "../assets/image/BackgroundTDL.jpg"
 
 
 
@@ -166,6 +170,37 @@ export const ProjectData = [
             }
         ]
     },
+    {
+        id : "5",
+        name : "ToDoList",
+        deploy : "https://to-do-list-iota-smoky.vercel.app/",
+        role : "Desenvolvimento",
+        client : "N/A",
+        resume : "Projeto Back End com MongoDB, Express e Mongoose para criar uma TodoList com CRUD e integração eficaz.",
+        description : "O projeto teve como objetivo principal aprofundar os conhecimentos em desenvolvimento Back End, com foco na utilização do MongoDB, um banco de dados NoSQL, em conjunto com o framework Express para Node.js e a biblioteca Mongoose. A aplicação resultante é uma API que utiliza a biblioteca EJS como mecanismo de visualização. Essa aplicação é uma TodoList que permite a criação de listas de tarefas, além da adição, edição e remoção de tarefas em cada lista. A implementação de operações CRUD (Create, Read, Update e Delete) foi o cerne do desenvolvimento, destacando a comunicação eficiente entre o Back End, o Front End e o banco de dados. O projeto buscou a integração bem-sucedida dessas tecnologias, consolidando habilidades essenciais no desenvolvimento de aplicações web robustas e escaláveis.",
+        gols : "O principal objetivo deste projeto foi consolidar e aplicar o conhecimento adquirido no desenvolvimento Back End, com foco especial em bancos de dados NoSQL, usando o MongoDB. Além disso, buscamos demonstrar a habilidade de utilizar o framework Express e a biblioteca Mongoose para estabelecer uma sólida conexão entre a aplicação Node.js e o banco de dados MongoDB. A criação de uma aplicação prática de uma lista de tarefas (TodoList) serviu como um contexto real para aplicar esses conhecimentos. A aplicação permitia a criação de listas de tarefas, bem como a adição, edição e remoção de tarefas dentro dessas listas. O uso da biblioteca EJS como mecanismo de visualização contribuiu para uma experiência mais amigável ao usuário, tornando possível a visualização e manipulação das listas e tarefas de forma mais intuitiva.",
+        background : BackgroundTDL,
+        gitHub : "https://github.com/WilliamsWallace-dev/ToDoList",
+        figma : "https://www.figma.com/file/WaOJmbDxfixzPnQw2kzxn2/Demon-Slayer?type=design&node-id=0%3A1&mode=design&t=ZIFShx669cQ0EZdW-1",
+        techs : [
+            {
+                name : "NodeJs",
+                img : nodejs
+            },
+            {
+                name : "JavaScript",
+                img : javaScript
+            },
+            {
+                name : "Css",
+                img : css
+            },
+            {
+                name : "MongoDB",
+                img : mongodb
+            }
+        ]
+    },
 ]
 
 export interface techsDescription{
@@ -184,7 +219,7 @@ export interface projectInfo {
         gols : string,
         background : string,
         gitHub : string,
-        figma : string,
+        figma? : string,
         test? : {
             username : string,
             password : string,

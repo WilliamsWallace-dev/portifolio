@@ -12,7 +12,22 @@ export const ProjectSection = ()=>{
                     <h2 data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up">Trabalhos Selecionados</h2>
                     <p className="p2 mt-1" data-aos-delay="200" data-aos-duration="1500" data-aos="fade-up">"A criatividade é a inteligência se divertindo." - Albert Einstein</p>
                 </div>
-                <div className="projectContainer w-100  mt-2">
+                {ProjectData.map((project,index)=>{
+                    return(
+                        <>
+                            <div className="projectContainer w-100  mt-2">
+                                <div className="projectDesctiption flex-center flex-around  w-100 text-center">
+                                    <h2 data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up" className="project-number">{`0${project.id}`}</h2>
+                                    <h2 data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up" className="flex-item-4">{project.name}</h2>
+                                    <p data-aos-delay="500" data-aos-duration="1500" data-aos="fade-up" className="p2 flex-item-1">{project.resume}</p>
+                                    <p data-aos-delay="600" data-aos-duration="1500" data-aos="fade-up" className="p2 flex-item-1 mobile-none">Design & Desenvolvimento</p>
+                                    <Link to={`/${project.name}/${project.id}`}><button data-aos-delay="700" data-aos-duration="1500" data-aos="fade-up" className="btn-3">Ver Mais</button></Link>
+                                </div>
+                            </div>
+                        </>
+                    )
+                })}
+                {/* <div className="projectContainer w-100  mt-2">
                     <div className="projectDesctiption flex-center flex-around  w-100 text-center">
                         <h2 data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up" className="project-number">{`0${ProjectData[0].id}`}</h2>
                         <h2 data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up" className="flex-item-4">{ProjectData[0].name}</h2>
@@ -20,8 +35,8 @@ export const ProjectSection = ()=>{
                         <p data-aos-delay="600" data-aos-duration="1500" data-aos="fade-up" className="p2 flex-item-1 mobile-none">Design & Desenvolvimento</p>
                         <Link to={`/${ProjectData[0].name}/${ProjectData[0].id}`}><button data-aos-delay="700" data-aos-duration="1500" data-aos="fade-up" className="btn-3">Ver Mais</button></Link>
                     </div>
-                </div>
-                <div className="projectContainer w-100  mt-2">
+                </div> */}
+                {/* <div className="projectContainer w-100  mt-2">
                     <div className="projectDesctiption flex-center flex-around  w-100 text-center">
                         <h2 data-aos-delay="300" data-aos-duration="1500" data-aos="fade-up" className="project-number">{`0${ProjectData[1].id}`}</h2>
                         <h2 data-aos-delay="400" data-aos-duration="1500" data-aos="fade-up" className="flex-item-4">{ProjectData[1].name}</h2>
@@ -47,7 +62,7 @@ export const ProjectSection = ()=>{
                         <p data-aos-delay="600" data-aos-duration="1500" data-aos="fade-up" className="p2 flex-item-1 mobile-none">Design & Desenvolvimento</p>
                         <Link to={`/${ProjectData[3].name}/${ProjectData[3].id}`}><button data-aos-delay="700" data-aos-duration="1500" data-aos="fade-up" className="btn-3">Ver Mais</button></Link>
                     </div>
-                </div>
+                </div> */}
                 
             </section>
         </>

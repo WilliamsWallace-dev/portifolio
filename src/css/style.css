@@ -863,6 +863,11 @@ a {
 #starsMov2 {
   transform-origin: 50% 50%;
 }
+@media screen and (min-width: 960px) {
+  #starsMov2 {
+    animation: starsMov2 60s linear 3s infinite normal both;
+  }
+}
 
 @keyframes starsMov2 {
   0% {
@@ -885,25 +890,21 @@ a {
 }
 @media screen and (min-width: 960px) {
   #SombraFundo {
-    animation: sombraFundo 20s ease 0s infinite alternate both;
+    animation: sombraFundo 4s ease 0s infinite alternate both;
   }
 }
 
 @keyframes sombraFundo {
   0% {
-    transform: translate3d(0px, 0px, 0);
     opacity: 0.64;
   }
   30% {
-    transform: translate3d(-100px, 0px, 0px);
     opacity: 0;
   }
   60% {
-    transform: translate3d(0px, 50px, 0px);
     opacity: 0.64;
   }
   100% {
-    transform: translate3d(0px, -20px, 0px);
     opacity: 0.8;
   }
 }
@@ -912,25 +913,21 @@ a {
 }
 @media screen and (min-width: 960px) {
   #SombraFundo2 {
-    animation: sombraFundo2 20s ease 0s infinite alternate both;
+    animation: sombraFundo2 6s ease 0s infinite alternate both;
   }
 }
 
 @keyframes sombraFundo2 {
   0% {
-    transform: translate3d(0px, 0px, 0);
     opacity: 0.8;
   }
   30% {
-    transform: translate3d(-50px, 0px, 0px);
     opacity: 0.64;
   }
   60% {
-    transform: translate3d(0px, -50px, 0px);
     opacity: 0.64;
   }
   100% {
-    transform: translate3d(50px, 50px, 0px);
     opacity: 0;
   }
 }
@@ -939,25 +936,21 @@ a {
 }
 @media screen and (min-width: 960px) {
   #SombraFundo3 {
-    animation: sombraFundo3 30s ease 0s infinite alternate both;
+    animation: sombraFundo3 8s ease 0s infinite alternate both;
   }
 }
 
 @keyframes sombraFundo3 {
   0% {
-    transform: translate3d(0px, 0px, 0);
     opacity: 0.64;
   }
   30% {
-    transform: translate3d(200px, 0px, 0px);
     opacity: 0.8;
   }
   60% {
-    transform: translate3d(0px, -100px, 0px);
     opacity: 0;
   }
   100% {
-    transform: translate3d(0px, 100px, 0px);
     opacity: 0.64;
   }
 }
@@ -982,11 +975,7 @@ a {
 }
 #circle2 {
   transform-origin: 50% 50%;
-}
-@media screen and (min-width: 960px) {
-  #circle2 {
-    animation: circle2 120s linear 1s infinite alternate both;
-  }
+  animation: circle2 120s linear 1s infinite alternate both;
 }
 
 @keyframes circle2 {

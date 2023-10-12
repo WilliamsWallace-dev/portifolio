@@ -22,6 +22,10 @@ export const TechSection = ()=>{
                             <li className="itemListTech p2" data-aos-delay="800" data-aos-duration="1500" data-aos="fade-up">CSS</li>
                             <li className="itemListTech p2" data-aos-delay="900" data-aos-duration="1500" data-aos="fade-up">Gsap</li>
                             <li className="itemListTech p2" data-aos-delay="1000" data-aos-duration="1500" data-aos="fade-up">Firebase</li>
+                            <li className="itemListTech p2" data-aos-delay="1000" data-aos-duration="1500" data-aos="fade-up">NodeJs</li>
+                            <li className="itemListTech p2" data-aos-delay="1000" data-aos-duration="1500" data-aos="fade-up">MongoDB</li>
+                            <li className="itemListTech p2" data-aos-delay="1000" data-aos-duration="1500" data-aos="fade-up">SQL</li>
+                            <li className="itemListTech p2" data-aos-delay="1000" data-aos-duration="1500" data-aos="fade-up">PostgreSQL</li>
                         </ul>
                     </div>
                 </div>

@@ -44,10 +44,11 @@
 
 #starsMov2{
   transform-origin: 50% 50%;
-  // @media  screen and (min-width : 960px) {
-  //   display: none;
-  // }
-  // animation : starsMov2 60s linear 3s infinite normal both
+  @media  screen and (min-width : 960px) {
+    // display: none;
+   animation : starsMov2 60s linear 3s infinite normal both
+  }
+ 
   
 }
 
@@ -75,26 +76,22 @@
   transform-origin: 50% 50%;
   // transform: translate3d(200px,0,0);
   @media  screen and (min-width : 960px) {
-    animation: sombraFundo 20s ease 0s infinite alternate both;
+    animation: sombraFundo 4s ease 0s infinite alternate both;
   }
   
 }
 
 @keyframes sombraFundo {
   0%{
-    transform: translate3d(0px, 0px, 0);
     opacity: .64;
   }
   30%{
-    transform: translate3d(-100px,0px,0px);
     opacity: 0;
   }
   60%{
-    transform: translate3d(0px,50px,0px);
     opacity: .64;
   }
   100%{
-    transform: translate3d(0px, -20px,0px);
     opacity: .8;
   }
 }
@@ -102,7 +99,7 @@
 #SombraFundo2{
   transform-origin: 50% 50%;
   @media  screen and (min-width : 960px) {
-    animation: sombraFundo2 20s ease 0s infinite alternate both;
+    animation: sombraFundo2 6s ease 0s infinite alternate both;
   }
   // transform: translate3d(200px,0,0);
   
@@ -110,19 +107,15 @@
 
 @keyframes sombraFundo2 {
   0%{
-    transform: translate3d(0px, 0px, 0);
     opacity: .8;
   }
   30%{
-    transform: translate3d(-50px,0px,0px);
     opacity: .64;
   }
   60%{
-    transform: translate3d(0px,-50px,0px);
     opacity: .64;
   }
   100%{
-    transform: translate3d(50px,50px,0px);
     opacity: 0;
   }
 }
@@ -131,27 +124,27 @@
 #SombraFundo3{
   transform-origin: 50% 50%;
   @media  screen and (min-width : 960px) {
-    animation: sombraFundo3 30s ease 0s infinite alternate both;
+    animation: sombraFundo3 8s ease 0s infinite alternate both;
   }
   
 }
 
 @keyframes sombraFundo3 {
   0%{
-    transform: translate3d(0px, 0px, 0);
+    // transform: translate3d(0px, 0px, 0);
     opacity: .64;
   }
   30%{
-    transform: translate3d(200px,0px,0px);
+    // transform: translate3d(200px,0px,0px);
     opacity: .8;
   }
   60%{
-    transform: translate3d(0px,-100px,0px);
+    // transform: translate3d(0px,-100px,0px);
     opacity: 0;
 
   }
   100%{
-    transform: translate3d(0px,100px,0px);
+    // transform: translate3d(0px,100px,0px);
     opacity: .64;
   }
 }
@@ -183,9 +176,9 @@
 
 #circle2{
   transform-origin: 50% 50%;
-  @media  screen and (min-width : 960px) {
+  // @media  screen and (min-width : 960px) {
     animation: circle2 120s linear 1s infinite alternate both;
-  }
+  // }
   // animation: circle2 120s linear 1s infinite alternate both;
 }
 
