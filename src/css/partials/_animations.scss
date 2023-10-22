@@ -180,9 +180,9 @@
 
 #circle2{
   transform-origin: 50% 50%;
-  // @media  screen and (min-width : 960px) {
+  @media  screen and (min-width : 960px) {
     animation: circle2 120s linear 1s infinite alternate both;
-  // }
+  }
   // animation: circle2 120s linear 1s infinite alternate both;
 }
 

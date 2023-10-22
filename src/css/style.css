@@ -973,7 +973,11 @@ a {
 }
 #circle2 {
   transform-origin: 50% 50%;
-  animation: circle2 120s linear 1s infinite alternate both;
+}
+@media screen and (min-width: 960px) {
+  #circle2 {
+    animation: circle2 120s linear 1s infinite alternate both;
+  }
 }
 
 @keyframes circle2 {
